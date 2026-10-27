@@ -55,3 +55,7 @@ Provider cost пілота й full **USD 0.03754609** точно збігаєт�
 [Доказ replay](../evidence/chain-ready/20261027T171853781261Z-b7485f18/verification.json).
 [Policy](../tool-call-testing-policy.md) · [порожня форма](../tool-call-testing-policy-template.md) · [докази дій і кешу](tool-evidence.md).
 D11 masked і D29 forbidden writes 0/5 лишаються явними межами результату.
+
+## Додаткова перевірка після фідбеку
+
+[Окрема пара D11](mentor-revision.md) без optional currency дала baseline PASS / D11 state FAIL (USD→EUR). Це не змінює первинних частот і34/34. Додатковий provider cost USD0.00104664; сукупний usage USD0.03859273.

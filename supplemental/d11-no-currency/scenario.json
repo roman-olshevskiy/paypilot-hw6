@@ -1,0 +1,92 @@
+{
+  "customer_id": "CUS-0008",
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "defect": {
+      "profile": "clean",
+      "defects": "D11",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "Find my BookDepot payment on 9 September for the default-fields dispute check.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_d11_r1_0",
+              "name": "get_account",
+              "arguments": {}
+            }
+          ]
+        },
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_d11_r1_1",
+              "name": "get_transactions",
+              "arguments": {
+                "account_id": "ACC-1009"
+              }
+            }
+          ]
+        },
+        {
+          "text": "The BookDepot payment is TX-0801. Its original amount and denomination are available from the transaction record."
+        }
+      ]
+    },
+    {
+      "user": "I did not authorize that payment. Open an unauthorized-debit dispute for TX-0801 using its stored defaults. In create_dispute provide only transaction_id and reason_code; omit optional amount and currency overrides.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "tool_called",
+      "tool": "create_dispute",
+      "args": {
+        "transaction_id": "TX-0801",
+        "reason_code": "unauthorized_debit"
+      },
+      "precondition": true,
+      "level": [
+        1
+      ]
+    },
+    {
+      "kind": "state_row",
+      "table": "disputes",
+      "where": {
+        "transaction_id": "TX-0801"
+      },
+      "expected_count": 1,
+      "expect_fields": {
+        "account_id": "ACC-1009",
+        "amount": 120.0,
+        "currency": "USD",
+        "reason_code": "unauthorized_debit"
+      },
+      "level": [
+        1
+      ]
+    }
+  ],
+  "id": "HW6-D11-R1",
+  "title": "D11 default currency: optional override omitted",
+  "dimension": "state",
+  "gate": "daily",
+  "runs": 1,
+  "origin": "own",
+  "design_note": "Targeted default-parameter path, explicitly omits overrides; not evidence of spontaneous omission in ordinary conversation. Original HW6-04 unchanged.",
+  "level": [
+    1
+  ]
+}

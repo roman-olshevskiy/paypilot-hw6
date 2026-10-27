@@ -1,0 +1,52 @@
+{
+  "scope": "One targeted baseline/D11 pair, distinct from original frozen suite",
+  "folder": "evidence/runs/20261027T210028506397Z-dd5eb0ec",
+  "live_steps": 2,
+  "mock_steps": 2,
+  "chat_requests": 4,
+  "provider_cost_usd": 0.00104664,
+  "root_cost_usd": 0.001047,
+  "baseline_passed": true,
+  "D11_expected_state_failure": true,
+  "both_create_dispute_calls_omit_optional_currency": true,
+  "results": [
+    {
+      "condition": "baseline",
+      "request_id": "eee9be787a134be8",
+      "arguments": {
+        "transaction_id": "TX-0801",
+        "reason_code": "unauthorized_debit"
+      },
+      "state": {
+        "id": 1,
+        "transaction_id": "TX-0801",
+        "account_id": "ACC-1009",
+        "reason_code": "unauthorized_debit",
+        "amount": 120.0,
+        "currency": "USD",
+        "status": "open",
+        "created_at": "2026-09-15T10:00:00+00:00"
+      },
+      "root_cost_usd": 0.000513
+    },
+    {
+      "condition": "defect",
+      "request_id": "8ed8fe52691f4aff",
+      "arguments": {
+        "transaction_id": "TX-0801",
+        "reason_code": "unauthorized_debit"
+      },
+      "state": {
+        "id": 1,
+        "transaction_id": "TX-0801",
+        "account_id": "ACC-1009",
+        "reason_code": "unauthorized_debit",
+        "amount": 120.0,
+        "currency": "EUR",
+        "status": "open",
+        "created_at": "2026-09-15T10:00:00+00:00"
+      },
+      "root_cost_usd": 0.000534
+    }
+  ]
+}

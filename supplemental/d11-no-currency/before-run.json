@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-27",
+  "scope": "Supplemental reviewer recommendation, not a replacement for frozen suite or original forecast",
+  "expected": "baseline USD, D11 EUR only if currency override omitted; no retry to obtain desired result",
+  "live_steps_planned": 2,
+  "runs_per_condition": 1,
+  "sha256": {
+    "scenario.json": "6b3b092410916dcda559d70d4bb0bb0b67ff17851c91d2349b1885718d174ca5",
+    "expectations.json": "87a0202aee49e16e0c6b965f736a1472c25732581f87070b6e726f0b27c38c17"
+  },
+  "commit_status": "Local files frozen before calls; no new commit authorized"
+}

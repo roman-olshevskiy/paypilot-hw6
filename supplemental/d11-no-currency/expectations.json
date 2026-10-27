@@ -1,0 +1,136 @@
+[
+  {
+    "id": "hw6-d11-r1-step1-reply1",
+    "httpRequest": {
+      "method": "POST",
+      "path": ".*/chat/completions",
+      "body": {
+        "type": "JSON_PATH",
+        "jsonPath": "$.messages[-1:][?(@.role == 'user' && @.content == 'Find my BookDepot payment on 9 September for the default-fields dispute check.')]"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "id": "hw6-d11-r1-step1-reply1",
+        "object": "chat.completion",
+        "model": "anthropic/claude-haiku-5.5",
+        "choices": [
+          {
+            "index": 0,
+            "finish_reason": "tool_calls",
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "tool_calls": [
+                {
+                  "id": "call_hw6_d11_r1_0",
+                  "type": "function",
+                  "function": {
+                    "name": "get_account",
+                    "arguments": "{}"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "hw6-d11-r1-step1-reply2",
+    "httpRequest": {
+      "method": "POST",
+      "path": ".*/chat/completions",
+      "body": {
+        "type": "JSON_PATH",
+        "jsonPath": "$.messages[-1:][?(@.role == 'tool' && @.tool_call_id == 'call_hw6_d11_r1_0')]"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "id": "hw6-d11-r1-step1-reply2",
+        "object": "chat.completion",
+        "model": "anthropic/claude-haiku-5.5",
+        "choices": [
+          {
+            "index": 0,
+            "finish_reason": "tool_calls",
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "tool_calls": [
+                {
+                  "id": "call_hw6_d11_r1_1",
+                  "type": "function",
+                  "function": {
+                    "name": "get_transactions",
+                    "arguments": "{\"account_id\": \"ACC-1009\"}"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "hw6-d11-r1-step1-reply3",
+    "httpRequest": {
+      "method": "POST",
+      "path": ".*/chat/completions",
+      "body": {
+        "type": "JSON_PATH",
+        "jsonPath": "$.messages[-1:][?(@.role == 'tool' && @.tool_call_id == 'call_hw6_d11_r1_1')]"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "id": "hw6-d11-r1-step1-reply3",
+        "object": "chat.completion",
+        "model": "anthropic/claude-haiku-5.5",
+        "choices": [
+          {
+            "index": 0,
+            "finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "The BookDepot payment is TX-0801. Its original amount and denomination are available from the transaction record."
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0
+        }
+      }
+    }
+  }
+]

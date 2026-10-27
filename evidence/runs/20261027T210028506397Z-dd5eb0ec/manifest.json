@@ -1,0 +1,23 @@
+{
+  "args": [
+    "--scenario",
+    "HW6-D11-R1",
+    "--runs",
+    "1"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "restore_errors": [],
+  "restore_status": "passed",
+  "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+  "chat_attempts": 4,
+  "responses": 4,
+  "complete": 4,
+  "report_sha256": {
+    "raw-results.json": "5d21418327d39bb344bc08a0af4a104198527623c6a0a3644f55fc8817fc6378"
+  },
+  "quality_passed": false,
+  "global_settings_scope": "Compared and restored if changed; per-request settings do not change server config",
+  "database_scope": "Seed reset is real; arbitrary pre-run DB/session state is not restored",
+  "proxy_scope": "Logs cleared by native runner, active expectations not changed by adapter"
+}
