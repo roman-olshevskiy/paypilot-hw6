@@ -1,6 +1,6 @@
 # ДЗ №6 — Tool Call Assertion Suite
 
-10 сценаріїв, 3 власні; повна копія L07 ce025e3, стенд shared74f1995. Основний комплект змержено в main (PR #3); фінальне review завершено. Для здачі — [покажчик артефактів](SUBMISSION.md).
+10 сценаріїв, 3 власні; повна копія L07 ce025e3, стенд shared74f1995. Початковий комплект змержено й надіслано в LMS; усі доопрацювання за фідбеком ментора виконано й перевірено. Комплект готовий до повторної здачі. Для здачі — [покажчик артефактів](SUBMISSION.md).
 
 - [Policy](tool-call-testing-policy.md) і [порожня переносна форма](tool-call-testing-policy-template.md): 12 розділів, по 2 сторінки A4.
 - [Результати](docs/full-run-summary.md), [докази дій/стану/кешу](docs/tool-evidence.md), [оракули й ризики 9 інструментів](docs/oracles-and-risk.md).
@@ -37,3 +37,7 @@ Remove-Item Env:HW6_ENABLE_PAID_RUNS
 ~~~
 Native exit 0 не замінює verdicts. Expected defect FAIL відокремлюється від ERROR. Write має передумову досягнення дії та перевірку постстану; текст відповіді не є assertion. Capture не повторює chat автоматично; settings відновлюються, довільна початкова БД/сесії після seed reset не відновлюються.
 Вихідні S1–S5 у sources/upstream/scenarios; run_step.py/build_mock.py не змінені. Матриця gate/runs — у scenarios та Policy.
+
+## Доопрацювання за фідбеком ментора
+
+[Виконані правки й додатковий D11 доказ](docs/mentor-revision.md): оцінки затримки в Policy §8, таблиця ризиків у §12; baseline PASS / D11 state FAIL без currency. Додатковий provider cost USD0.00104664; загалом USD0.03859273. Початкові результати34/34 та їхня вартість вище — історична серія. Доопрацювання перевірено; комплект готовий до повторної здачі.

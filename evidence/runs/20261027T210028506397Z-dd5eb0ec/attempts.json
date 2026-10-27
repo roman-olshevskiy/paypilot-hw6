@@ -1,0 +1,78 @@
+[
+  {
+    "scenario": "HW6-D11-R1",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Find my BookDepot payment on 9 September for the default-fields dispute check.",
+      "session_id": null,
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "ed4b6fe7fc7d4164"
+  },
+  {
+    "scenario": "HW6-D11-R1",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "I did not authorize that payment. Open an unauthorized-debit dispute for TX-0801 using its stored defaults. In create_dispute provide only transaction_id and reason_code; omit optional amount and currency overrides.",
+      "session_id": "0cb09ef36fef",
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "eee9be787a134be8"
+  },
+  {
+    "scenario": "HW6-D11-R1",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D11",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Find my BookDepot payment on 9 September for the default-fields dispute check.",
+      "session_id": null,
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "624e9432b3ac461c"
+  },
+  {
+    "scenario": "HW6-D11-R1",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D11",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "I did not authorize that payment. Open an unauthorized-debit dispute for TX-0801 using its stored defaults. In create_dispute provide only transaction_id and reason_code; omit optional amount and currency overrides.",
+      "session_id": "08e72056ce14",
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "8ed8fe52691f4aff"
+  }
+]

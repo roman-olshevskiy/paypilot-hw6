@@ -1,8 +1,7 @@
 # ДЗ6 — локальне середовище
 
 Власна копія L07, upstream ce025e3; source hashes у evidence/setup-source.json.
-Вихідні S1–S5 збережено в sources/upstream/scenarios. Власний набір10 сценаріїв і26 expectations підготовлено; forecast commit ще очікує review.
-Усі зміни локальні, без staging/commit/push. Main у цьому новому репозиторії поки без комітів.
+Вихідні S1–S5 збережено в sources/upstream/scenarios. Початковий набір10 сценаріїв і26 expectations змержено в main. Додатковий D11-сценарій ізольовано в supplemental/d11-no-currency; його matchers встановлюються лише на час окремого eval.
 
 ## Запустити mock
 З кореня paypilot-hw6: docker compose up -d llm-mock.

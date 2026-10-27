@@ -7,8 +7,8 @@
     {
       "file": "tool-call-testing-policy.md",
       "pages": 2,
-      "words": 738,
-      "sha256": "8aee9ad1d5ba46ac81717029c0a4d843e8ebfe390da286ac8c6f5c47dd4323d3"
+      "words": 776,
+      "sha256": "3b31c1761362f9b32c250f2286f4bca94b07560243c645187dbb0c1b06a0a16c"
     },
     {
       "file": "tool-call-testing-policy-template.md",
@@ -17,6 +17,6 @@
       "sha256": "bf673f76833a5e10b8fe5d1a1abc64713228d5179c0114cffcb89a209f5cf005"
     }
   ],
-  "visual_review": "passed: all four pages inspected, no clipping or overlap",
-  "scope": "Print layout only; Markdown viewers may paginate differently"
+  "visual_review": "passed: revised filled policy pages1-2 inspected; blank unchanged SHA from previous visual review",
+  "scope": "Print layout only; Markdown viewers may paginate differently; final EOF whitespace normalized without layout change"
 }

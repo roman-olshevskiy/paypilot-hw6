@@ -1,0 +1,12 @@
+{
+  "key_usage_before_usd": 0.03754609,
+  "key_usage_after_usd": 0.03859273,
+  "delta_usd": 0.00104664,
+  "provider_span_sum_usd": 0.00104664,
+  "difference_usd": 0,
+  "supplement_root_estimate_usd": 0.001047,
+  "total_provider_including_original_usd": 0.03859273,
+  "total_root_estimate_usd": 0.038599,
+  "byok_usage_usd": 0,
+  "scope": "Read-only key usage, not a new account available balance confirmation; initial after snapshot lag preserved"
+}

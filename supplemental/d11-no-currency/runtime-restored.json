@@ -1,0 +1,9 @@
+{
+  "provider": "anthropic",
+  "runtime": {
+    "HTTPS_PROXY": "",
+    "SSL_CERT_FILE": ""
+  },
+  "mock": "exited",
+  "model_calls": 0
+}
