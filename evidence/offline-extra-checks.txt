@@ -1,0 +1,10 @@
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== fixture · offline
+test_capture_file_failure_preserves_response_in_memory_and_restores (test_preparation.Harness.test_capture_file_failure_preserves_response_in_memory_and_restores) ... ok
+test_missing_forecast_proof_blocks_before_http (test_preparation.Harness.test_missing_forecast_proof_blocks_before_http) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.023s
+
+OK

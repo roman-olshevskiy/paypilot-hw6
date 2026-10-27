@@ -1,0 +1,116 @@
+[
+  {
+    "scenario": "HW6-01",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "List my accounts before checking the disputed subscription.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "d0040dd59e1e49ef"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "The 89.99 USD CloudServe payment on ACC-1003 dated 8 September was not mine.",
+      "session_id": "d18101652fb7",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "e9e6f2fabbdb48f2"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Open the unauthorized-debit dispute for that subscription payment now.",
+      "session_id": "d18101652fb7",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "34444a9b8d4c4d28"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D12",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "List my accounts before checking the disputed subscription.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "35af375410334da8"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D12",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "The 89.99 USD CloudServe payment on ACC-1003 dated 8 September was not mine.",
+      "session_id": "216f53a3ab7d",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "a02a4c98f6914761"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D12",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Open the unauthorized-debit dispute for that subscription payment now.",
+      "session_id": "216f53a3ab7d",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "778b8d85f7d5419a"
+  }
+]

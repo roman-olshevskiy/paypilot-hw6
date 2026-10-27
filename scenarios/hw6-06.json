@@ -1,0 +1,88 @@
+{
+  "id": "HW6-06",
+  "title": "Resolve the other payment from the prepared history",
+  "customer_id": "CUS-0002",
+  "gate": "release",
+  "runs": 5,
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "List the recent USD card payments for account ACC-1003.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_06_1",
+              "name": "get_transactions",
+              "arguments": {
+                "account_id": "ACC-1003"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Recent card payments on ACC-1003:\n- TX-0204, 12 September 2026, 450.00 USD, FlightHub Booking\n- TX-0202, 8 September 2026, 89.99 USD, CloudServe Subscription"
+        }
+      ]
+    },
+    {
+      "user": "I recognize the FlightHub booking and want to keep it.",
+      "model": [
+        {
+          "text": "Thanks for confirming TX-0204. Is there anything you would like me to do about the other payment?"
+        }
+      ]
+    },
+    {
+      "user": "The other payment was not mine. Please dispute that other one as unauthorized.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "tool_called",
+      "tool": "create_dispute",
+      "args": {
+        "transaction_id": "TX-0202"
+      },
+      "level": [
+        1
+      ]
+    },
+    {
+      "kind": "tool_not_called",
+      "tool": "create_dispute",
+      "args": {
+        "transaction_id": "TX-0204"
+      },
+      "level": [
+        4
+      ]
+    },
+    {
+      "kind": "state_row",
+      "table": "disputes",
+      "where": {
+        "transaction_id": "TX-0202"
+      },
+      "expected_count": 1,
+      "level": [
+        1
+      ]
+    }
+  ],
+  "dimension": "parameters",
+  "origin": "adapted S2",
+  "design_note": "Target TX-0202 exists only in prior history",
+  "level": [
+    1,
+    4
+  ]
+}

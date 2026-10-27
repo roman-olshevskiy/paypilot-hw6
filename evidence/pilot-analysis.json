@@ -1,0 +1,545 @@
+{
+  "date": "2026-10-27",
+  "groups": [
+    {
+      "scenario": "HW6-01",
+      "condition": "baseline",
+      "native_passed": true,
+      "request_id": "34444a9b8d4c4d28",
+      "session_id": "d18101652fb7",
+      "root_usage": {
+        "input_tokens": 10218,
+        "output_tokens": 354,
+        "model": "anthropic/claude-haiku-5.5",
+        "cost_usd": 0.000808,
+        "provider_cost_usd": 0.000809
+      },
+      "model_calls": 3,
+      "cache_read": [
+        0,
+        2514,
+        2514
+      ],
+      "tool_calls": [
+        {
+          "name": "tool.check_dispute_eligibility",
+          "arguments": {
+            "transaction_id": "TX-0202",
+            "reason_code": "unauthorized_debit"
+          },
+          "result": {
+            "eligible": true,
+            "reason_code": "unauthorized_debit",
+            "window_days": 56,
+            "tx_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "deadline": "2026-11-03",
+            "checks": {
+              "reason_code": "pass",
+              "tx_status": "pass",
+              "window": "pass",
+              "compliance_hold": "pass"
+            }
+          }
+        },
+        {
+          "name": "tool.create_dispute",
+          "arguments": {
+            "transaction_id": "TX-0202",
+            "reason_code": "unauthorized_debit"
+          },
+          "result": {
+            "dispute_id": 1,
+            "status": "open"
+          }
+        }
+      ],
+      "matching_disputes": [
+        {
+          "id": 1,
+          "transaction_id": "TX-0202",
+          "account_id": "ACC-1003",
+          "reason_code": "unauthorized_debit",
+          "amount": 89.99,
+          "currency": "USD",
+          "status": "open",
+          "created_at": "2026-09-15T10:00:00+00:00"
+        }
+      ],
+      "verdicts": [
+        {
+          "kind": "tool_called",
+          "ok": true,
+          "detail": "create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]"
+        },
+        {
+          "kind": "state_row",
+          "ok": true,
+          "detail": "rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]"
+        }
+      ],
+      "llm_usage": [
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3225,
+          "gen_ai.usage.output_tokens": 114,
+          "gen_ai.usage.cache_read_input_tokens": 0,
+          "gen_ai.usage.cache_creation_input_tokens": 2514,
+          "gen_ai.usage.reasoning_tokens": 20,
+          "provider.cost_usd": 0.00044235
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3441,
+          "gen_ai.usage.output_tokens": 131,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 42,
+          "provider.cost_usd": 0.00018334
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3552,
+          "gen_ai.usage.output_tokens": 109,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00018344
+        }
+      ]
+    },
+    {
+      "scenario": "HW6-01",
+      "condition": "defect",
+      "native_passed": false,
+      "request_id": "778b8d85f7d5419a",
+      "session_id": "216f53a3ab7d",
+      "root_usage": {
+        "input_tokens": 10590,
+        "output_tokens": 308,
+        "model": "anthropic/claude-haiku-5.5",
+        "cost_usd": 0.000804,
+        "provider_cost_usd": 0.000804
+      },
+      "model_calls": 3,
+      "cache_read": [
+        0,
+        2638,
+        2638
+      ],
+      "tool_calls": [
+        {
+          "name": "tool.check_dispute_eligibility",
+          "arguments": {
+            "transaction_id": "TX-0202",
+            "reason_code": "unauthorized_debit"
+          },
+          "result": {
+            "eligible": true,
+            "reason_code": "unauthorized_debit",
+            "window_days": 56,
+            "tx_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "deadline": "2026-11-03",
+            "checks": {
+              "reason_code": "pass",
+              "tx_status": "pass",
+              "window": "pass",
+              "compliance_hold": "pass"
+            }
+          }
+        },
+        {
+          "name": "tool.create_dispute",
+          "arguments": {
+            "transaction_id": "TX-0202",
+            "reason_code": "unauthorized_debit"
+          },
+          "result": {
+            "dispute_id": 1,
+            "status": "open"
+          }
+        }
+      ],
+      "matching_disputes": [
+        {
+          "id": 1,
+          "transaction_id": "TX-0202",
+          "account_id": "ACC-1002",
+          "reason_code": "unauthorized_debit",
+          "amount": 89.99,
+          "currency": "EUR",
+          "status": "open",
+          "created_at": "2026-09-15T10:00:00+00:00"
+        }
+      ],
+      "verdicts": [
+        {
+          "kind": "tool_called",
+          "ok": true,
+          "detail": "create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]"
+        },
+        {
+          "kind": "state_row",
+          "ok": false,
+          "detail": "account_id='ACC-1002', expected 'ACC-1003'; currency='EUR', expected 'USD'"
+        }
+      ],
+      "llm_usage": [
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3349,
+          "gen_ai.usage.output_tokens": 93,
+          "gen_ai.usage.cache_read_input_tokens": 0,
+          "gen_ai.usage.cache_creation_input_tokens": 2638,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00044735
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3565,
+          "gen_ai.usage.output_tokens": 88,
+          "gen_ai.usage.cache_read_input_tokens": 2638,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00016308
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3676,
+          "gen_ai.usage.output_tokens": 127,
+          "gen_ai.usage.cache_read_input_tokens": 2638,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00019368
+        }
+      ]
+    },
+    {
+      "scenario": "HW6-09",
+      "condition": "baseline",
+      "native_passed": true,
+      "request_id": "6aed684798254089",
+      "session_id": "4fd1ab99d750",
+      "root_usage": {
+        "input_tokens": 6349,
+        "output_tokens": 388,
+        "model": "anthropic/claude-haiku-5.5",
+        "cost_usd": 0.000377,
+        "provider_cost_usd": 0.000376
+      },
+      "model_calls": 2,
+      "cache_read": [
+        2514,
+        2514
+      ],
+      "tool_calls": [
+        {
+          "name": "tool.check_dispute_eligibility",
+          "arguments": {
+            "transaction_id": "TX-0402",
+            "reason_code": "duplicate_charge"
+          },
+          "result": {
+            "eligible": false,
+            "reason_code": "duplicate_charge",
+            "window_days": 60,
+            "tx_date": "2026-07-14",
+            "as_of": "2026-09-15",
+            "deadline": "2026-09-12",
+            "checks": {
+              "reason_code": "pass",
+              "tx_status": "pass",
+              "window": "fail: window of 60 days expired on 2026-09-12",
+              "compliance_hold": "pass"
+            }
+          }
+        }
+      ],
+      "matching_disputes": [],
+      "verdicts": [
+        {
+          "kind": "tool_call_count",
+          "ok": true,
+          "detail": "create_dispute called 0x, expected 0"
+        }
+      ],
+      "llm_usage": [
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3059,
+          "gen_ai.usage.output_tokens": 92,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00012564
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3290,
+          "gen_ai.usage.output_tokens": 296,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 113,
+          "provider.cost_usd": 0.00025074
+        }
+      ]
+    },
+    {
+      "scenario": "HW6-09",
+      "condition": "defect",
+      "native_passed": true,
+      "request_id": "1f31bbb065964f7a",
+      "session_id": "e81bc23898e2",
+      "root_usage": {
+        "input_tokens": 10208,
+        "output_tokens": 1152,
+        "model": "anthropic/claude-haiku-5.5",
+        "cost_usd": 0.000918,
+        "provider_cost_usd": 0.000918
+      },
+      "model_calls": 3,
+      "cache_read": [
+        2514,
+        2514,
+        2514
+      ],
+      "tool_calls": [
+        {
+          "name": "tool.check_dispute_eligibility",
+          "arguments": {
+            "transaction_id": "TX-0402",
+            "reason_code": "duplicate_charge"
+          },
+          "result": {
+            "ok": true,
+            "r": "N",
+            "c": [
+              3
+            ],
+            "w": 60
+          }
+        },
+        {
+          "name": "tool.search_knowledge_base",
+          "arguments": {
+            "query": "dispute eligibility response codes duplicate charge customer-level block window"
+          },
+          "result": {
+            "index": "kb_clean",
+            "top_k": 4,
+            "query": "dispute eligibility response codes duplicate charge customer-level block window",
+            "fragments": [
+              {
+                "id": "disputes.md#s1",
+                "doc": "disputes.md",
+                "score": 0.9045,
+                "text": "Payment dispute rules\n## Reason codes and chargeback windows\nEach reason code has a window in days from the transaction date. A dispute opened after the window closes is not eligible.\n\n| Reason code | Window (days) |\n|---|---|\n| fraud_card_not_present | 120 |\n| goods_not_received | 90 |\n| duplicate_charge | 60 |\n| service_not_rendered | 90 |\n| unauthorized_debit | 56 |"
+              },
+              {
+                "id": "disputes.md#s3",
+                "doc": "disputes.md",
+                "score": 0.7845,
+                "text": "Payment dispute rules\n## Escalation on blocked disputes\nWhen a dispute is blocked by a customer-level restriction, the case must be\nescalated to a human agent."
+              },
+              {
+                "id": "disputes.md#s2",
+                "doc": "disputes.md",
+                "score": 0.762,
+                "text": "Payment dispute rules\n## Eligibility conditions\nA dispute is eligible only if all of the following hold: the reason code is\nvalid; the transaction status is settled; the transaction date is within the\nreason code's window relative to the current date; and no customer-level\nrestriction applies (for example, an account under compliance review cannot\nopen new disputes until the review concludes)."
+              },
+              {
+                "id": "disputes-process.md#s1",
+                "doc": "disputes-process.md",
+                "score": 0.7143,
+                "text": "Dispute handling process\n## Raising a dispute\nA dispute is raised against a single settled transaction. The customer supplies\nthe transaction reference and a reason code. The agent verifies eligibility\nbefore the case is opened; an ineligible request is refused with the failing\ncondition named, except where confidentiality rules apply."
+              }
+            ]
+          }
+        }
+      ],
+      "matching_disputes": [],
+      "verdicts": [
+        {
+          "kind": "tool_call_count",
+          "ok": true,
+          "detail": "create_dispute called 0x, expected 0"
+        }
+      ],
+      "llm_usage": [
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3059,
+          "gen_ai.usage.output_tokens": 92,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00012564
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3181,
+          "gen_ai.usage.output_tokens": 399,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 286,
+          "provider.cost_usd": 0.00029134
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3968,
+          "gen_ai.usage.output_tokens": 661,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 362,
+          "provider.cost_usd": 0.00050104
+        }
+      ]
+    },
+    {
+      "scenario": "HW6-10",
+      "condition": "baseline",
+      "native_passed": true,
+      "request_id": "f92df7b512f14c8f",
+      "session_id": "0535440a69f1",
+      "root_usage": {
+        "input_tokens": 6634,
+        "output_tokens": 215,
+        "model": "anthropic/claude-haiku-5.5",
+        "cost_usd": 0.000318,
+        "provider_cost_usd": 0.000318
+      },
+      "model_calls": 2,
+      "cache_read": [
+        2514,
+        2514
+      ],
+      "tool_calls": [
+        {
+          "name": "tool.check_limits",
+          "arguments": {
+            "customer_id": "CUS-0010"
+          },
+          "result": {
+            "tier": "tier3",
+            "as_of": "2026-09-15",
+            "daily_limit_eur": 100000,
+            "daily_spent_eur": 4914.0,
+            "daily_remaining_eur": 95086.0,
+            "monthly_limit_eur": 1000000,
+            "monthly_spent_eur": 35334.0,
+            "monthly_remaining_eur": 964666.0
+          }
+        }
+      ],
+      "matching_disputes": [],
+      "verdicts": [
+        {
+          "kind": "cache_read_min",
+          "ok": true,
+          "detail": "cache_read per call from #2: [2514]"
+        }
+      ],
+      "llm_usage": [
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3226,
+          "gen_ai.usage.output_tokens": 56,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.00012434
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3408,
+          "gen_ai.usage.output_tokens": 159,
+          "gen_ai.usage.cache_read_input_tokens": 2514,
+          "gen_ai.usage.cache_creation_input_tokens": 0,
+          "gen_ai.usage.reasoning_tokens": 30,
+          "provider.cost_usd": 0.00019404
+        }
+      ]
+    },
+    {
+      "scenario": "HW6-10",
+      "condition": "defect",
+      "native_passed": false,
+      "request_id": "06fafc5aeac5450b",
+      "session_id": "243bfc9b69ce",
+      "root_usage": {
+        "input_tokens": 6666,
+        "output_tokens": 184,
+        "model": "anthropic/claude-haiku-5.5",
+        "cost_usd": 0.000886,
+        "provider_cost_usd": 0.000885
+      },
+      "model_calls": 2,
+      "cache_read": [
+        0,
+        0
+      ],
+      "tool_calls": [
+        {
+          "name": "tool.check_limits",
+          "arguments": {
+            "customer_id": "CUS-0010"
+          },
+          "result": {
+            "tier": "tier3",
+            "as_of": "2026-09-15",
+            "daily_limit_eur": 100000,
+            "daily_spent_eur": 4914.0,
+            "daily_remaining_eur": 95086.0,
+            "monthly_limit_eur": 1000000,
+            "monthly_spent_eur": 35334.0,
+            "monthly_remaining_eur": 964666.0
+          }
+        }
+      ],
+      "matching_disputes": [],
+      "verdicts": [
+        {
+          "kind": "cache_read_min",
+          "ok": false,
+          "detail": "cache_read per call from #2: [0]"
+        }
+      ],
+      "llm_usage": [
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3243,
+          "gen_ai.usage.output_tokens": 56,
+          "gen_ai.usage.cache_read_input_tokens": 0,
+          "gen_ai.usage.cache_creation_input_tokens": 2531,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.000415575
+        },
+        {
+          "gen_ai.request.model": "anthropic/claude-haiku-5.5",
+          "gen_ai.usage.input_tokens": 3423,
+          "gen_ai.usage.output_tokens": 128,
+          "gen_ai.usage.cache_read_input_tokens": 0,
+          "gen_ai.usage.cache_creation_input_tokens": 2529,
+          "gen_ai.usage.reasoning_tokens": 0,
+          "provider.cost_usd": 0.000469525
+        }
+      ]
+    }
+  ],
+  "chat_requests": 18,
+  "live_steps": 6,
+  "mock_steps": 12,
+  "independent_sessions": 6,
+  "root_cost_usd": 0.004111,
+  "cost_known_live_steps": 6,
+  "cache_step_cost_ratio": 2.7861635220125787,
+  "linear_full_root_estimate_usd": 0.03562866666666667,
+  "forecast_D29_forbidden_writes": "2/5, not testable from one pilot repeat",
+  "forecast_D28_cost_ratio": 2.5,
+  "scope": "Pilot only; no5/5 frequency claim. Root estimate is not an invoice.",
+  "openrouter_key_reported_usage_usd": 0.00411112,
+  "openrouter_byok_usage_usd": 0,
+  "billing_scope": "Key usage before pilot was0 in readiness audit; after0.00411112. Root sum differs by0.00000012, consistent with rounded per-step estimates. Not an itemized invoice.",
+  "full_live_calls_authorized": false
+}

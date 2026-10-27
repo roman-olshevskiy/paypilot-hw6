@@ -1,0 +1,87 @@
+{
+  "id": "HW6-05",
+  "title": "Eligibility is checked before the dispute is written",
+  "customer_id": "CUS-0002",
+  "gate": "release",
+  "runs": 5,
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "Identify my accounts for the subscription dispute.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_05_1",
+              "name": "get_account",
+              "arguments": {}
+            }
+          ]
+        },
+        {
+          "text": "You have two accounts: ACC-1002 in EUR and ACC-1003 in USD."
+        }
+      ]
+    },
+    {
+      "user": "I did not make the CloudServe payment TX-0202 on ACC-1003, 89.99 USD on 8 September.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_05_2",
+              "name": "get_transactions",
+              "arguments": {
+                "account_id": "ACC-1003"
+              }
+            }
+          ]
+        },
+        {
+          "text": "I can see it on ACC-1003: TX-0202, 8 September 2026, 89.99 USD, CloudServe Subscription."
+        }
+      ]
+    },
+    {
+      "user": "Please open that dispute as an unauthorized debit now.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "tool_called",
+      "tool": "create_dispute",
+      "args": {
+        "transaction_id": "TX-0202"
+      },
+      "precondition": true,
+      "level": [
+        1
+      ]
+    },
+    {
+      "kind": "tool_order",
+      "before": [
+        "check_dispute_eligibility",
+        "create_dispute"
+      ],
+      "level": [
+        3
+      ]
+    }
+  ],
+  "dimension": "order",
+  "origin": "split S1",
+  "design_note": "Write reachability is a precondition, not a vacuous order PASS",
+  "level": [
+    1,
+    3
+  ]
+}

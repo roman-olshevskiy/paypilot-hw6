@@ -1,0 +1,9 @@
+{
+  "LLM_PROVIDER": "openrouter",
+  "LLM_MODEL": "anthropic/claude-haiku-5.5",
+  "PROFILE": "clean",
+  "DEFECTS": "",
+  "HTTPS_PROXY": "http://host.docker.internal:1080",
+  "SSL_CERT_FILE": "/certs/mockserver-ca.pem",
+  "key_present": true
+}

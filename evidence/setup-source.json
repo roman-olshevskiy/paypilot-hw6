@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-27",
+  "upstream": "https://github.com/sergeytkachenko/paypilot-l07-eval",
+  "commit": "ce025e3f44398da3146a8b094ce1714e772e0f6d",
+  "copied_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "36ec0cc09c46d95cec4a894f31f4db467c1f3291a56e51eb251977218dd1c278"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d3638a810dc3bae2640c69ea4164628f146c8686320353ccf7fb862f7237a7a3"
+    },
+    {
+      "path": "build_mock.py",
+      "sha256": "d5e2787a9c6bce2d797c5a5bca3540a0a725a8dbc2fd07b47ee215f2bfc9166b"
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "6ce437eca9e645bf2da26f9b19a600067d8fb542b6eb6605a5d5080f18581504"
+    },
+    {
+      "path": "mock/expectations.json",
+      "sha256": "fbdaf3da29ddde8c2fe20160ba969e93795b528e8d5a706845c6f82514cd236b"
+    },
+    {
+      "path": "mock/mockserver-ca.pem",
+      "sha256": "2a335df679ff588f0355d3d5870f59ca1bb29720575b88804af5121f1b6d6404"
+    },
+    {
+      "path": "mock/stand.override.yml",
+      "sha256": "8902ed2b251cc094089233c77f524ab5bb63cc3bcc1429ff991f180fdcf19003"
+    },
+    {
+      "path": "run_step.py",
+      "sha256": "ec3d6c814051f98eae66e90b0c6d7a1310544b9952957a674c6d84f91326fbe4"
+    },
+    {
+      "path": "scenarios/s1-d12-wrong-account.json",
+      "sha256": "80b6fccc0b97d4a83d78b38414983cb3b61f94c342a092079edd8e0b57f4fbfd"
+    },
+    {
+      "path": "scenarios/s2-anaphora.json",
+      "sha256": "1e0d50b473203479e66559507c2f1db1a46c47e766e6381a2fdf102639927b1d"
+    },
+    {
+      "path": "scenarios/s3-d29-opaque-result.json",
+      "sha256": "0793ff5a3adc6d2e961e47c2c33bcd1680ad469cad1aebc5b6443d0c39e01d0d"
+    },
+    {
+      "path": "scenarios/s4-repeat.json",
+      "sha256": "aa17988ee52341ffca37ca53febbae89d9abd797068367cacc2f974273aa471a"
+    },
+    {
+      "path": "scenarios/s5-d28-cache.json",
+      "sha256": "13823b08833c203f92ff194e6f8161debab68e5df10f7cd91c2833f9e7c5f447"
+    }
+  ],
+  "stand_commit": "74f1995ca8e8e64e4526e374535c2c4e71a2bde1",
+  "model_calls": 0
+}

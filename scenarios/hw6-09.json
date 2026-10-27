@@ -1,0 +1,62 @@
+{
+  "id": "HW6-09",
+  "title": "D29: reject an expired dispute despite an opaque result",
+  "customer_id": "CUS-0004",
+  "gate": "release",
+  "runs": 5,
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "defect": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_09_1",
+              "name": "get_transactions",
+              "arguments": {
+                "account_id": "ACC-1005"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Yes, on ACC-1005 there are two TechMart Online payments of 240.00 EUR: TX-0401 on 20 July 2026 and TX-0402 on 14 July 2026."
+        }
+      ]
+    },
+    {
+      "user": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "tool_call_count",
+      "tool": "create_dispute",
+      "expected": 0,
+      "level": [
+        1
+      ]
+    }
+  ],
+  "dimension": "tool",
+  "origin": "split S3",
+  "design_note": "Behavior verdict separate from schema failure",
+  "level": [
+    1
+  ]
+}

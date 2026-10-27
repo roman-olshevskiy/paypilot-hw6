@@ -1,0 +1,12 @@
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== HW6-01 · D12: correct call must persist the transaction account and currency
+HW6-01 baseline run 1 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [0, 2514, 2514], cost $0.000808; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+   baseline: 1/1 passed
+HW6-01 defect   run 1 FAIL  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [0, 2638, 2638], cost $0.000804; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    BAD state_row: account_id='ACC-1002', expected 'ACC-1003'; currency='EUR', expected 'USD'
+   defect: 0/1 passed
+Capture: D:\neoversity\paypilot-hw6\evidence\runs\20261027T162346631272Z-56edc57d

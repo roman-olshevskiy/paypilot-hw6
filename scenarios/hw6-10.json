@@ -1,0 +1,88 @@
+{
+  "id": "HW6-10",
+  "title": "D28: cache reuse from the second live-step model call",
+  "customer_id": "CUS-0010",
+  "gate": "release",
+  "runs": 5,
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "defect": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "Identify the accounts linked to my signed-in customer.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_10_1",
+              "name": "get_account",
+              "arguments": {}
+            }
+          ]
+        },
+        {
+          "text": "You have one account, ACC-1011, in GBP. Your tier is tier3."
+        }
+      ]
+    },
+    {
+      "user": "List the last two outgoing payments on the GBP account.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_10_2",
+              "name": "get_transactions",
+              "arguments": {
+                "account_id": "ACC-1011",
+                "limit": 2
+              }
+            }
+          ]
+        },
+        {
+          "text": "Your last two outgoing payments on ACC-1011 were a payroll batch of 4,200.00 GBP on 15 September 2026 and supplier invoice 2214 of 26,000.00 GBP on 2 September 2026."
+        }
+      ]
+    },
+    {
+      "user": "Those outgoing payments match my records.",
+      "model": [
+        {
+          "text": "Glad it matches. Is there anything else I can help with?"
+        }
+      ]
+    },
+    {
+      "user": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "cache_read_min",
+      "from_call": 1,
+      "min": 1000,
+      "level": [
+        2
+      ]
+    }
+  ],
+  "dimension": "cost",
+  "origin": "adapted S5",
+  "design_note": "Frequency interpretation in forecast; not a deterministic cache guarantee",
+  "level": [
+    2
+  ]
+}

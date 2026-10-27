@@ -1,0 +1,74 @@
+[
+ {
+  "scenario": "HW6-10",
+  "condition": "baseline",
+  "settings": {
+   "profile": "clean",
+   "defects": "",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 4,
+    "passed": true,
+    "verdicts": [
+     {
+      "kind": "cache_read_min",
+      "ok": true,
+      "detail": "cache_read per call from #2: [2514]"
+     }
+    ],
+    "answer": "Your tier3 transfer limits as of 15 September 2026 (EUR equivalent):\n\n- **Daily:** limit 100,000.00 EUR, spent 4,914.00 EUR, remaining 95,086.00 EUR\n- **Monthly:** limit 1,000,000.00 EUR, spent 35,334.00 EUR, remaining 964,666.00 EUR",
+    "tools": [
+     "check_limits"
+    ],
+    "model_calls": 2,
+    "cache_read": [
+     2514,
+     2514
+    ],
+    "cost_usd": 0.000318,
+    "mock_answered": 5,
+    "mock_seen": 7
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-10",
+  "condition": "defect",
+  "settings": {
+   "profile": "clean",
+   "defects": "D28",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 4,
+    "passed": false,
+    "verdicts": [
+     {
+      "kind": "cache_read_min",
+      "ok": false,
+      "detail": "cache_read per call from #2: [0]"
+     }
+    ],
+    "answer": "Your current transfer limits (tier3, as of 15 September 2026, EUR equivalent):\n\n- **Daily:** limit 100,000.00 EUR; used 4,914.00 EUR; remaining 95,086.00 EUR\n- **Monthly:** limit 1,000,000.00 EUR; used 35,334.00 EUR; remaining 964,666.00 EUR",
+    "tools": [
+     "check_limits"
+    ],
+    "model_calls": 2,
+    "cache_read": [
+     0,
+     0
+    ],
+    "cost_usd": 0.000886,
+    "mock_answered": 5,
+    "mock_seen": 7
+   }
+  ]
+ }
+]
