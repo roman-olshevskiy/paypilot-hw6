@@ -1,7 +1,7 @@
 # ДЗ №6 — Tool Call Assertion Suite
 
-**Пілот завершено; повна серія ще не запускалася.**
-Власна копія L07 ce025e3; shared74f1995. Гілка codex/hw6-tool-call-suite, локальний forecast commit89ac39e, без push. Результати пілота незакомічені.
+**Пілот і повні daily/release серії завершено. Policy — наступний крок.**
+Власна копія L07 ce025e3; shared74f1995. Гілка codex/hw6-tool-call-suite, локальний forecast commit89ac39e, без push. PR підготовки й пілота змержено; результати повної серії локальні в codex/hw6-full-runs.
 [Локальне середовище](SETUP.md) · [Оракули й ризик9 інструментів](docs/oracles-and-risk.md) ·
 [Прогноз до запусків](docs/forecast-before-runs.md) · [Freeze](evidence/dataset-freeze.json).
 
@@ -58,7 +58,7 @@ Remove-Item Env:HW6_ENABLE_PAID_RUNS
 ~~~
 Пілот складається з HW6-01,HW6-09,HW6-10 по1 repeat baseline+defect.
 Крок9 завершено:6 live/12 mock, root USD0.004111, API usage USD0.00411112.
-[Пілот і бюджет](docs/pilot-review.md). Наступний повний прогін ще не дозволено.
+[Пілот і бюджет](docs/pilot-review.md). Повну серію виконано за наступною прямою вказівкою; див. результат нижче.
 
 ## Capture і майбутній CI
 Кожен виклик adapter створює evidence/runs/<UTC-ID>, ніколи не перезаписує інший запуск.
@@ -71,7 +71,20 @@ Native CLI exit0 може містити quality FAIL — CI має читати
 
 Для майбутніх повних серій --gate daily використовує1 repeat, --gate release використовує5.
 Без --gate native runner типово виконує1, навіть якщо сценарій має runs5.
-Chain-ready baseline/gate докази ще не зібрано: вони потребують живої моделі після пілота.
+Daily і release виконано; baseline34/34. Повтор на чистій копії й остаточний chain-ready audit — крок13, без автоматичного дублювання витрат.
 Policy у двох формах — кроки11–12 плану, не заявляється завершеною зараз.
 
 [Підсумок підготовки до пілота](evidence/preparation-summary.json):16 offline +9 environment checks passed. Підготовка завершена, пілот описано вище.
+
+
+## Повні серії — крок10
+
+[Звіт](docs/full-run-summary.md) · [машинний аналіз](evidence/full-run-analysis.json) ·
+[білінг](evidence/full-billing-reconciliation.json).
+
+52 live /69 mock,121 chat,52 сесії; baseline34/34 PASS.
+D12-state і D29-contract дали очікуваний FAIL; D13 FAIL5/5; D28 FAIL5/5, mean cost ratio2.955×.
+D11 masked by explicit currency:USD; D29 forbidden writes0/5 проти прогнозу2/5.
+Root full USD0.033441, разом із пілотом0.037552. Останній key usage0.03691475;
+залишкова різниця не оголошена звіреною. Усі captures/restore повні, forecast і suite unchanged.
+Результати локальні, без автоматичних комітів/push. Наступний крок11 — аналіз і Policy.

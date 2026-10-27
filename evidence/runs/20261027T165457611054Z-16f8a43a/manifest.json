@@ -1,0 +1,21 @@
+{
+  "args": [
+    "--gate",
+    "daily"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "restore_errors": [],
+  "restore_status": "passed",
+  "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+  "chat_attempts": 16,
+  "responses": 16,
+  "complete": 16,
+  "report_sha256": {
+    "raw-results.json": "868c12e290454e77c2fb5a952d516a2a833838ec5f3ece10e39d8dce13de244b"
+  },
+  "quality_passed": false,
+  "global_settings_scope": "Compared and restored if changed; per-request settings do not change server config",
+  "database_scope": "Seed reset is real; arbitrary pre-run DB/session state is not restored",
+  "proxy_scope": "Logs cleared by native runner, active expectations not changed by adapter"
+}

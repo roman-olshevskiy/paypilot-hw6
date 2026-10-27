@@ -1,0 +1,1997 @@
+[
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Identify my accounts for the subscription dispute.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "29f0fdbb90d94f6f"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "I did not make the CloudServe payment TX-0202 on ACC-1003, 89.99 USD on 8 September.",
+      "session_id": "ebf6d8c037f5",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "1653ebf734a94a49"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Please open that dispute as an unauthorized debit now.",
+      "session_id": "ebf6d8c037f5",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "8b174c146d204b77"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Identify my accounts for the subscription dispute.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "25dc60ddc4784dd9"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 2,
+    "request": {
+      "message": "I did not make the CloudServe payment TX-0202 on ACC-1003, 89.99 USD on 8 September.",
+      "session_id": "a91185b44883",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "4f114c44c49e4b61"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 3,
+    "request": {
+      "message": "Please open that dispute as an unauthorized debit now.",
+      "session_id": "a91185b44883",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "f862399c99aa4e87"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Identify my accounts for the subscription dispute.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "d68994d6182043b4"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 2,
+    "request": {
+      "message": "I did not make the CloudServe payment TX-0202 on ACC-1003, 89.99 USD on 8 September.",
+      "session_id": "ebbca65add45",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "bfaf80bb93c24c62"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 3,
+    "request": {
+      "message": "Please open that dispute as an unauthorized debit now.",
+      "session_id": "ebbca65add45",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "d45803a7a83e4aba"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Identify my accounts for the subscription dispute.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "f3fe04831f364440"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 2,
+    "request": {
+      "message": "I did not make the CloudServe payment TX-0202 on ACC-1003, 89.99 USD on 8 September.",
+      "session_id": "713ac67b4945",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "4fd5afd0ac2a4388"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 3,
+    "request": {
+      "message": "Please open that dispute as an unauthorized debit now.",
+      "session_id": "713ac67b4945",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "aa9a33de582941f6"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Identify my accounts for the subscription dispute.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "fc6f8041680848eb"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 2,
+    "request": {
+      "message": "I did not make the CloudServe payment TX-0202 on ACC-1003, 89.99 USD on 8 September.",
+      "session_id": "acb993d36659",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "98a2f6d8c2b04c3a"
+  },
+  {
+    "scenario": "HW6-05",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 3,
+    "request": {
+      "message": "Please open that dispute as an unauthorized debit now.",
+      "session_id": "acb993d36659",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "f3cf3045fe2f4550"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "List the recent USD card payments for account ACC-1003.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "b3ab00a5b8c14b86"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "I recognize the FlightHub booking and want to keep it.",
+      "session_id": "3216b5910361",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "150c55a5de1b481e"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "The other payment was not mine. Please dispute that other one as unauthorized.",
+      "session_id": "3216b5910361",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "ca6995981b72444c"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "List the recent USD card payments for account ACC-1003.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "0a8e2fa870494e44"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 2,
+    "request": {
+      "message": "I recognize the FlightHub booking and want to keep it.",
+      "session_id": "40a35450bfcd",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "38d61be9e15243a8"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 3,
+    "request": {
+      "message": "The other payment was not mine. Please dispute that other one as unauthorized.",
+      "session_id": "40a35450bfcd",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "6c014cf235364e5e"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "List the recent USD card payments for account ACC-1003.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "cae54e3a782a4ef8"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 2,
+    "request": {
+      "message": "I recognize the FlightHub booking and want to keep it.",
+      "session_id": "526c16a25f89",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "e07846ee8c614f8d"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 3,
+    "request": {
+      "message": "The other payment was not mine. Please dispute that other one as unauthorized.",
+      "session_id": "526c16a25f89",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "9cb46853b1d74928"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "List the recent USD card payments for account ACC-1003.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "e211a5e0c5de4990"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 2,
+    "request": {
+      "message": "I recognize the FlightHub booking and want to keep it.",
+      "session_id": "efb32fddb402",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "9e01188c8f824832"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 3,
+    "request": {
+      "message": "The other payment was not mine. Please dispute that other one as unauthorized.",
+      "session_id": "efb32fddb402",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "ee23da58efc84ef6"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "List the recent USD card payments for account ACC-1003.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "f389e8be37104ea2"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 2,
+    "request": {
+      "message": "I recognize the FlightHub booking and want to keep it.",
+      "session_id": "1f2afb1d680b",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "22a15088a676450c"
+  },
+  {
+    "scenario": "HW6-06",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 3,
+    "request": {
+      "message": "The other payment was not mine. Please dispute that other one as unauthorized.",
+      "session_id": "1f2afb1d680b",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "10cba76550174fb2"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "934e41ffd99a4015"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "fdab41b8f9ef4790"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "ba2dedbda5454945"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "d60df61cb17e4f5c"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "b145c524ef4840a2"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D13",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "177c23af63ee4e2c"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D13",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "4ab5db87c0b94a69"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D13",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "0d68e0ed5a8244ec"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D13",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "24a7ce7cd80245f5"
+  },
+  {
+    "scenario": "HW6-07",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D13",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "9f37000bb09a4248"
+  },
+  {
+    "scenario": "HW6-08",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Open a duplicate-charge dispute for TX-0402, the TechMart Online payment of 14 July 2026.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "e3dbde77b05f4ffd"
+  },
+  {
+    "scenario": "HW6-08",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Open a duplicate-charge dispute for TX-0402, the TechMart Online payment of 14 July 2026.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "840129bd5fca4f0c"
+  },
+  {
+    "scenario": "HW6-08",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Open a duplicate-charge dispute for TX-0402, the TechMart Online payment of 14 July 2026.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "f9e7a150c29d4922"
+  },
+  {
+    "scenario": "HW6-08",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Open a duplicate-charge dispute for TX-0402, the TechMart Online payment of 14 July 2026.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "932c9b855c2747d8"
+  },
+  {
+    "scenario": "HW6-08",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Open a duplicate-charge dispute for TX-0402, the TechMart Online payment of 14 July 2026.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "6411355c95914aa4"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "b2a49ce1c0ae4465"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "2d7021383785",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "69ea734f35924599"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "e744121dd5d74fb2"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "01264057d6b2",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "7f13a93f752a45c9"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "0f7520aea124461b"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "6bd3e16ccdfa",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "f5c5d3df10ae4726"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "6b26c9d66b654d77"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "0c9057c8ce88",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "6b2fb7b0a0e8474c"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "a86961d835e14f39"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "469496c0a733",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "34e19b11cd4e4577"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "e004dec20e294a85"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "7e13a921a4b2",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "b37dde62afbf420e"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "0196408148d24106"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "fcc12492e8b1",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "01593e7ced5b4548"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "ace28be1f4ce405b"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "c6134f735064",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "a62eb48a05b24cbe"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "0675a4f6cb1d4cde"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "b9d8616b62b9",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "6cbb296d8e484a75"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "922e52d327e741fd"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "394a31cdfb40",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "89cace5b47da40a2"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "a30ce3628bda47cd"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "3f9d1be362e0",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "3eacf06ac57b4e1b"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "3f9d1be362e0",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "767e820aff014bf4"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "3f9d1be362e0",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "da5c80bd0d9042b9"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "6e5ac36444d042c2"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "2d6d5c6381fc",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "60f847e723204cb9"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "2d6d5c6381fc",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "e8619432f72042a6"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "2d6d5c6381fc",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "dd06d194c2ed43a5"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "bb1e8da453f74f1f"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "f94a1703bc65",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "9e1899657ece45cb"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "f94a1703bc65",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "56b1d25ae26a401c"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "f94a1703bc65",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "6b95c8a256fe4def"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "0974ffc0ac5a4c0e"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "1df523da0bf4",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "d8bbba8caae6410b"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "1df523da0bf4",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "fbe0989f11df4218"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "1df523da0bf4",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "4a022da7b3284522"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "7b755c984a794ea9"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "e3f4e382c5c1",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "00186ebbc4cc4e2d"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "e3f4e382c5c1",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "13a26c9033de4d28"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "e3f4e382c5c1",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "10fa0d489198486b"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "e3142bb6ea0f4776"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "1057624addc5",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "50800da79b8f4290"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "1057624addc5",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "1c6ea167d6064efc"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "1057624addc5",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "2dc427be7d8b4f1c"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "9a859807359f422f"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "d79a00701ad7",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "e70fb2bb9f9f475b"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "d79a00701ad7",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "1138cb2623e54628"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 2,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "d79a00701ad7",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "4950b0c4e09c4f52"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "b2ac8985a9c04113"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "8e72390c473a",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "9665fea4a71a44e0"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "8e72390c473a",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "62965403b1e54ac0"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 3,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "8e72390c473a",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "7dd7d5fb09f941ce"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "891efa630ef44856"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "98e1280917a7",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "dff331a5811645a2"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "98e1280917a7",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "32ffd9bc61de41eb"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 4,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "98e1280917a7",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "1344352dc23b44e7"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "1e2b92023f604775"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "fffc7b0113bc",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "bc816f04ed1b4dc2"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "fffc7b0113bc",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "c2cae7dab15443ee"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 5,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "fffc7b0113bc",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "4498ba39daff416e"
+  }
+]

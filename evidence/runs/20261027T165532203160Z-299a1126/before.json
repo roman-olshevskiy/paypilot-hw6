@@ -1,0 +1,99 @@
+{
+  "health": {
+    "status": "ok",
+    "profile": "clean",
+    "startup_profile": "clean",
+    "active_defects": [],
+    "provider": "openrouter",
+    "router": "",
+    "otlp": true,
+    "trace_backends": [
+      "otlp",
+      "langfuse"
+    ],
+    "trace_content": true,
+    "scope": "server",
+    "request_settings": {},
+    "locked": false,
+    "keys_required": false,
+    "key": null,
+    "key_settings": null,
+    "admin": false
+  },
+  "defects": {
+    "profile": "clean",
+    "known_profiles": [
+      "clean",
+      "lesson-01",
+      "lesson-02",
+      "lesson-03",
+      "lesson-04",
+      "lesson-05",
+      "lesson-06",
+      "lesson-07",
+      "lesson-08",
+      "lesson-09",
+      "lesson-10",
+      "lesson-11",
+      "lesson-12",
+      "lesson-13",
+      "lesson-14"
+    ],
+    "all_defects": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29"
+    ],
+    "profile_defects": [],
+    "extra_defects": [],
+    "active": [],
+    "scope": "server",
+    "details": {}
+  },
+  "clock": {
+    "now": "2026-09-15T10:00:00+00:00",
+    "runtime_override": null,
+    "env_override": "2026-09-15T10:00:00Z",
+    "request_override": null,
+    "scope": "server"
+  },
+  "summarize": {
+    "summarize_after_steps": 8,
+    "scope": "server"
+  },
+  "retrieval": {
+    "index": "kb_clean",
+    "top_k": 4,
+    "requested_index": "",
+    "requested_top_k": 4,
+    "index_env": "",
+    "rag_top_k": 4,
+    "scope": "server"
+  }
+}

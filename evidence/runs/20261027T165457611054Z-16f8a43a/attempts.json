@@ -1,0 +1,306 @@
+[
+  {
+    "scenario": "HW6-01",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "List my accounts before checking the disputed subscription.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "d935c56cc81441cc"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "The 89.99 USD CloudServe payment on ACC-1003 dated 8 September was not mine.",
+      "session_id": "6ca3d58d2939",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "67b207b858694939"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Open the unauthorized-debit dispute for that subscription payment now.",
+      "session_id": "6ca3d58d2939",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "6c80975e9ba14374"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D12",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "List my accounts before checking the disputed subscription.",
+      "session_id": null,
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "3533c0188c734993"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D12",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "The 89.99 USD CloudServe payment on ACC-1003 dated 8 September was not mine.",
+      "session_id": "a9f9a78a80a3",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "08ce83b0866742bb"
+  },
+  {
+    "scenario": "HW6-01",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D12",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Open the unauthorized-debit dispute for that subscription payment now.",
+      "session_id": "a9f9a78a80a3",
+      "customer_id": "CUS-0002"
+    },
+    "status": "response_received",
+    "request_id": "f0ff186973e746fe"
+  },
+  {
+    "scenario": "HW6-02",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Show both TechMart Online charges recorded on ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "f71d3618e1454849"
+  },
+  {
+    "scenario": "HW6-02",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Check TX-0402 and open a duplicate-charge dispute only if it is eligible.",
+      "session_id": "dd2c82d74944",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "fb7aa709258a49f6"
+  },
+  {
+    "scenario": "HW6-02",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Show both TechMart Online charges recorded on ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "4e6562aab1bc45f0"
+  },
+  {
+    "scenario": "HW6-02",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Check TX-0402 and open a duplicate-charge dispute only if it is eligible.",
+      "session_id": "103eb1624fa8",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "488ce69707d542a0"
+  },
+  {
+    "scenario": "HW6-03",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Open the duplicate-charge dispute for TX-0401 on my account.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "adf51d801bac48fd"
+  },
+  {
+    "scenario": "HW6-03",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Repeat that dispute request; make sure the same dispute remains open.",
+      "session_id": "f246fe6c7908",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "9a841ebec85a427c"
+  },
+  {
+    "scenario": "HW6-04",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Show my account and the BookDepot US card payment from 9 September.",
+      "session_id": null,
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "194300bf6a8d4327"
+  },
+  {
+    "scenario": "HW6-04",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "I did not authorize that BookDepot payment. Open an unauthorized-debit dispute for its original amount.",
+      "session_id": "772d9aebf71f",
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "50695590f6594c52"
+  },
+  {
+    "scenario": "HW6-04",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D11",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Show my account and the BookDepot US card payment from 9 September.",
+      "session_id": null,
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "14e21925ff5a4a87"
+  },
+  {
+    "scenario": "HW6-04",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D11",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "I did not authorize that BookDepot payment. Open an unauthorized-debit dispute for its original amount.",
+      "session_id": "0d1a4079cf6d",
+      "customer_id": "CUS-0008"
+    },
+    "status": "response_received",
+    "request_id": "68572780b0744d4b"
+  }
+]

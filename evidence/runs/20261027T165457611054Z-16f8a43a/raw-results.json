@@ -1,0 +1,281 @@
+[
+ {
+  "scenario": "HW6-01",
+  "condition": "baseline",
+  "settings": {
+   "profile": "clean",
+   "defects": "",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 3,
+    "passed": true,
+    "verdicts": [
+     {
+      "kind": "tool_called",
+      "ok": true,
+      "detail": "create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]"
+     },
+     {
+      "kind": "state_row",
+      "ok": true,
+      "detail": "rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]"
+     }
+    ],
+    "answer": "The dispute is open. Details:\n\n- **Dispute ID:** 1\n- **Transaction:** TX-0202, CloudServe Subscription, 89.99 USD, 8 September 2026, ACC-1003\n- **Reason:** Unauthorized debit\n- **Status:** Open\n\nThe eligibility check passed: the transaction is settled and within the 56-day dispute window, which closes on 3 November 2026. I have not made any other changes to your account.",
+    "tools": [
+     "check_dispute_eligibility",
+     "create_dispute"
+    ],
+    "model_calls": 3,
+    "cache_read": [
+     0,
+     2514,
+     2514
+    ],
+    "cost_usd": 0.000808,
+    "mock_answered": 4,
+    "mock_seen": 7
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-01",
+  "condition": "defect",
+  "settings": {
+   "profile": "clean",
+   "defects": "D12",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 3,
+    "passed": false,
+    "verdicts": [
+     {
+      "kind": "tool_called",
+      "ok": true,
+      "detail": "create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]"
+     },
+     {
+      "kind": "state_row",
+      "ok": false,
+      "detail": "account_id='ACC-1002', expected 'ACC-1003'; currency='EUR', expected 'USD'"
+     }
+    ],
+    "answer": "The unauthorized-debit dispute for the CloudServe Subscription payment (TX-0202, 89.99 USD, 8 September 2026, ACC-1003) is now open. Dispute ID: 1, status: open.\n\nThe dispute window for this reason runs until 3 November 2026. I can't tell you the resolution timeline from my tools, so if you need more detail on the next steps, I can search the knowledge base or escalate to a human agent.",
+    "tools": [
+     "check_dispute_eligibility",
+     "create_dispute"
+    ],
+    "model_calls": 3,
+    "cache_read": [
+     0,
+     2638,
+     2638
+    ],
+    "cost_usd": 0.000813,
+    "mock_answered": 4,
+    "mock_seen": 7
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-02",
+  "condition": "baseline",
+  "settings": {
+   "profile": "clean",
+   "defects": "",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 2,
+    "passed": true,
+    "verdicts": [
+     {
+      "kind": "tool_result_schema",
+      "ok": true,
+      "detail": "result matches the contract"
+     }
+    ],
+    "answer": "I did not open a dispute for TX-0402. The duplicate-charge window is 60 days, and it closed on 12 September 2026. The transaction date was 14 July 2026, and today is 15 September 2026. The eligibility check failed on the window only; the transaction status and reason code checks passed.\n\nIf you want, I can search the knowledge base for any exceptions to the deadline, or escalate the case to a human agent to review it.",
+    "tools": [
+     "check_dispute_eligibility"
+    ],
+    "model_calls": 2,
+    "cache_read": [
+     2514,
+     2514
+    ],
+    "cost_usd": 0.000365,
+    "mock_answered": 2,
+    "mock_seen": 4
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-02",
+  "condition": "defect",
+  "settings": {
+   "profile": "clean",
+   "defects": "D29",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 2,
+    "passed": false,
+    "verdicts": [
+     {
+      "kind": "tool_result_schema",
+      "ok": false,
+      "detail": "eligible: expected boolean, got {\"ok\": true, \"r\": \"N\", \"c\": [3], \"w\": 60}; checks: expected object, got {\"ok\": true, \"r\": \"N\", \"c\": [3], \"w\": 60}"
+     }
+    ],
+    "answer": "I have not opened a dispute on TX-0402 (TechMart Online, 240.00 EUR, 14 July 2026).\n\nThe eligibility check returned `ok: true`, but its `r: \"N\"` and `c: [3]` fields are coded and don't map to a clear eligible or not-eligible result in the documentation I can access. The knowledge base confirms that a duplicate-charge dispute must be opened within 60 days of the transaction date, which for TX-0402 ends on 12 September 2026. I can't confirm today's date from the tools, so I can't verify that the window is still open. Because a dispute is irreversible, I'd rather not file it on an unclear result.\n\nOptions:\n1. **Escalate to a human agent** to confirm eligibility for TX-0402 and open the dispute if it qualifies. I can do this now.\n2. **Confirm that TX-0401 and TX-0402 are two separate charges for the same purchase.** Both are 240.00 EUR to TechMart Online, six days apart. If TX-0401 is a legitimate second purchase, a duplicate-charge dispute on TX-0402 wouldn't apply.\n\nWould you like me to escalate?",
+    "tools": [
+     "check_dispute_eligibility",
+     "search_knowledge_base"
+    ],
+    "model_calls": 3,
+    "cache_read": [
+     2514,
+     2514,
+     2514
+    ],
+    "cost_usd": 0.001074,
+    "mock_answered": 2,
+    "mock_seen": 5
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-03",
+  "condition": "baseline",
+  "settings": {
+   "profile": "clean",
+   "defects": "",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 2,
+    "passed": true,
+    "verdicts": [
+     {
+      "kind": "state_row",
+      "ok": true,
+      "detail": "rows [{'transaction_id': 'TX-0401', 'account_id': 'ACC-1005', 'amount': 240.0, 'currency': 'EUR'}]"
+     }
+    ],
+    "answer": "I won't submit it again. Dispute 1 for TX-0401 is already open, and sending a second request could create a duplicate dispute on the same transaction.\n\nI don't have a tool that lists open disputes, so I can't re-check its status from here. If you want confirmation beyond the original response, I can escalate to a human agent to verify it.",
+    "tools": [],
+    "model_calls": 1,
+    "cache_read": [
+     2514
+    ],
+    "cost_usd": 0.000203,
+    "mock_answered": 3,
+    "mock_seen": 4
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-04",
+  "condition": "baseline",
+  "settings": {
+   "profile": "clean",
+   "defects": "",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 2,
+    "passed": true,
+    "verdicts": [
+     {
+      "kind": "tool_called",
+      "ok": true,
+      "detail": "create_dispute calls: [{'transaction_id': 'TX-0801', 'reason_code': 'unauthorized_debit', 'amount': 120.0, 'currency': 'USD'}]"
+     },
+     {
+      "kind": "state_row",
+      "ok": true,
+      "detail": "rows [{'transaction_id': 'TX-0801', 'account_id': 'ACC-1009', 'amount': 120.0, 'currency': 'USD'}]"
+     }
+    ],
+    "answer": "The unauthorized-debit dispute for the BookDepot US payment is now open.\n\n- **Transaction:** TX-0801, 9 September 2026, BookDepot US\n- **Amount disputed:** 120.00 USD (the original amount)\n- **Dispute ID:** 1\n- **Status:** Open\n\nThe eligibility check passed: the transaction is settled and within the 56-day window, which closes on 4 November 2026.",
+    "tools": [
+     "check_dispute_eligibility",
+     "create_dispute"
+    ],
+    "model_calls": 3,
+    "cache_read": [
+     2514,
+     2514,
+     2514
+    ],
+    "cost_usd": 0.000544,
+    "mock_answered": 3,
+    "mock_seen": 6
+   }
+  ]
+ },
+ {
+  "scenario": "HW6-04",
+  "condition": "defect",
+  "settings": {
+   "profile": "clean",
+   "defects": "D11",
+   "clock": "2026-09-15T10:00:00Z",
+   "summarize_after": 8
+  },
+  "runs": [
+   {
+    "run": 1,
+    "live_step": 2,
+    "passed": true,
+    "verdicts": [
+     {
+      "kind": "tool_called",
+      "ok": true,
+      "detail": "create_dispute calls: [{'transaction_id': 'TX-0801', 'reason_code': 'unauthorized_debit', 'amount': 120, 'currency': 'USD'}]"
+     },
+     {
+      "kind": "state_row",
+      "ok": true,
+      "detail": "rows [{'transaction_id': 'TX-0801', 'account_id': 'ACC-1009', 'amount': 120.0, 'currency': 'USD'}]"
+     }
+    ],
+    "answer": "The unauthorized-debit dispute for the BookDepot US payment is now open.\n\n- **Transaction:** TX-0801, 9 September 2026\n- **Amount disputed:** 120.00 USD (the original amount)\n- **Dispute ID:** 1\n- **Status:** Open\n\nThe eligibility check passed: the transaction is settled and within the 56-day window, which runs until 4 November 2026. I have not made any other changes to your account.",
+    "tools": [
+     "check_dispute_eligibility",
+     "create_dispute"
+    ],
+    "model_calls": 3,
+    "cache_read": [
+     2514,
+     2514,
+     2514
+    ],
+    "cost_usd": 0.000554,
+    "mock_answered": 3,
+    "mock_seen": 6
+   }
+  ]
+ }
+]
