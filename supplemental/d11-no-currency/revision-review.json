@@ -13,9 +13,10 @@
   "filled_policy_visual_review": "passed",
   "authored_third_person_scan": "passed",
   "pending": [
-    "local review",
-    "authorized commit/push/PR",
+    "push/PR",
     "merge",
     "LMS resubmission"
-  ]
+  ],
+  "local_review": "completed by repository owner",
+  "submission_readiness": "ready"
 }
