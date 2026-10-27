@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-27",
+  "scenarios": [
+    {
+      "id": "HW6-01",
+      "origin": "adapted S1",
+      "note": "No order assertion in daily"
+    },
+    {
+      "id": "HW6-02",
+      "origin": "split S3",
+      "note": "Schema verdict is independent of the agent reaction"
+    },
+    {
+      "id": "HW6-03",
+      "origin": "adapted S4",
+      "note": "Checks repeat intent; not guaranteed duplicate backend invocation"
+    },
+    {
+      "id": "HW6-04",
+      "origin": "own",
+      "note": "Expected fields from seed and create_dispute; explicit currency argument can mask D11"
+    },
+    {
+      "id": "HW6-05",
+      "origin": "split S1",
+      "note": "Write reachability is a precondition, not a vacuous order PASS"
+    },
+    {
+      "id": "HW6-06",
+      "origin": "adapted S2",
+      "note": "Target TX-0202 exists only in prior history"
+    },
+    {
+      "id": "HW6-07",
+      "origin": "own",
+      "note": "Oracle is description contract plus customer request"
+    },
+    {
+      "id": "HW6-08",
+      "origin": "own",
+      "note": "Engine window is 60 days, deadline 12 September; as_of 15 September"
+    },
+    {
+      "id": "HW6-09",
+      "origin": "split S3",
+      "note": "Behavior verdict separate from schema failure"
+    },
+    {
+      "id": "HW6-10",
+      "origin": "adapted S5",
+      "note": "Frequency interpretation in forecast; not a deterministic cache guarantee"
+    }
+  ],
+  "seed_references": {
+    "CUS-0002": [
+      "CUS-0002",
+      "Borys Tkachenko",
+      "b.tkachenko@example.com",
+      "tier2",
+      0,
+      800.0
+    ],
+    "CUS-0004": [
+      "CUS-0004",
+      "Danylo Kovalenko",
+      "d.kovalenko@example.com",
+      "tier1",
+      0,
+      0.0
+    ],
+    "CUS-0008": [
+      "CUS-0008",
+      "Hugo Martins",
+      "hugo.martins@example.com",
+      "tier1",
+      0,
+      300.0
+    ],
+    "CUS-0010": [
+      "CUS-0010",
+      "Jonas Weber",
+      "jonas.weber@example.com",
+      "tier3",
+      0,
+      15000.0
+    ],
+    "ACC-1003": [
+      "ACC-1003",
+      "CUS-0002",
+      "USD",
+      5200.75
+    ],
+    "ACC-1005": [
+      "ACC-1005",
+      "CUS-0004",
+      "EUR",
+      1310.2
+    ],
+    "ACC-1009": [
+      "ACC-1009",
+      "CUS-0008",
+      "EUR",
+      940.1
+    ],
+    "ACC-1011": [
+      "ACC-1011",
+      "CUS-0010",
+      "GBP",
+      61200.0
+    ],
+    "TX-0202": [
+      "TX-0202",
+      "ACC-1003",
+      "2026-09-08",
+      89.99,
+      "USD",
+      "CloudServe Subscription",
+      "out",
+      "card",
+      "settled"
+    ],
+    "TX-0204": [
+      "TX-0204",
+      "ACC-1003",
+      "2026-09-12",
+      450.0,
+      "USD",
+      "FlightHub Booking",
+      "out",
+      "card",
+      "settled"
+    ],
+    "TX-0401": [
+      "TX-0401",
+      "ACC-1005",
+      "2026-07-20",
+      240.0,
+      "EUR",
+      "TechMart Online",
+      "out",
+      "card",
+      "settled"
+    ],
+    "TX-0402": [
+      "TX-0402",
+      "ACC-1005",
+      "2026-07-14",
+      240.0,
+      "EUR",
+      "TechMart Online",
+      "out",
+      "card",
+      "settled"
+    ],
+    "TX-0801": [
+      "TX-0801",
+      "ACC-1009",
+      "2026-09-09",
+      120.0,
+      "USD",
+      "BookDepot US",
+      "out",
+      "card",
+      "settled"
+    ]
+  },
+  "source_sha256": {
+    "app/seed.py": "995f3615793a144f456593c226d0bae41a40ce8cc53f1ab20b06847326480d3b",
+    "app/engines/policy.py": "6c771f94ad74563ce6a3848432b9f251d161c9c9db735f1c375a57854a4f5101",
+    "app/engines/disputes.py": "805b4fff4aeab79268cfd7510986afed98b37c9bd45c596e9b08484f00800649",
+    "app/agent/tools.py": "47c2d30a6b3cee08b830c532bac003403f310a24503a506b9c2b41728fedee71",
+    "app/agent/prompt.py": "5018931ac96ece9e0475e1d4fe63c7a8fcb1abaa42216a9f3ea8767fe7b2af30"
+  },
+  "own_ids": [
+    "HW6-04",
+    "HW6-07",
+    "HW6-08"
+  ],
+  "expected_as_of": "2026-09-15",
+  "live_evidence": false
+}

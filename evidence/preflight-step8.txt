@@ -1,0 +1,13 @@
+test_01_health (test_environment.Environment.test_01_health) ... ok
+test_02_registry (test_environment.Environment.test_02_registry) ... ok
+test_03_runtime (test_environment.Environment.test_03_runtime) ... ok
+test_04_ca (test_environment.Environment.test_04_ca) ... ok
+test_05_expectations (test_environment.Environment.test_05_expectations) ... ok
+test_06_mock_route_without_upstream_fallback (test_environment.Environment.test_06_mock_route_without_upstream_fallback) ... ok
+test_07_tool_contract_snapshots (test_environment.Environment.test_07_tool_contract_snapshots) ... ok
+test_08_request_scope_and_runtime_sources (test_environment.Environment.test_08_request_scope_and_runtime_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 3.008s
+
+OK

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-27",
+  "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+  "scenarios": {
+    "hw6-01.json": "6f36b14fc7406405a7b6d3619987ed2e252500478694e66a9327431140fdad58",
+    "hw6-02.json": "259a0e5729a3f6092671bdd6ee2c0c4260645e3b8c0f7c3e44da8cb3e405c248",
+    "hw6-03.json": "a2416e0fda172796bfae31837f0b88eb934cf39f6b25b7e98324db7dfdef7f3b",
+    "hw6-04.json": "3579660cbebb63066df34ddef25de4ba1191d201696569f1f69658c30fa50f76",
+    "hw6-05.json": "7639c0af7905cd4cd8a6084b20eac1858d099a32cef0df376c2643d7b1dc5fcf",
+    "hw6-06.json": "7dfc04e28317a7ce4fd877fa8e919149cf6a9eb8e5354bf4879f848619f12179",
+    "hw6-07.json": "4b5dd3f959be1182401e311613db514aab130111f282d3d972584d0895309dca",
+    "hw6-08.json": "c85401f9a8fb22f8e14294e1e1eda59897cfa4b061e70d5fae373df4faa3a7eb",
+    "hw6-09.json": "4b407bf65c47f77c7421623dd5c32864020906dc03e0809ce977edb6e329f4b7",
+    "hw6-10.json": "a30e5bef42486156c77144ded50045e0107038f8071329b7af17a40985ea0d79"
+  },
+  "expectations_sha256": "0bf3869f8b3412c1ee8c1b2bfe70d87497044f944f073e4ace7265239eb6269c",
+  "kit_commit": "ce025e3f44398da3146a8b094ce1714e772e0f6d",
+  "stand_commit": "74f1995ca8e8e64e4526e374535c2c4e71a2bde1",
+  "forecast_sha256": "b8df8ce7f1f3f4beeaa257cd54359a845b787890cb82ceaade75f3d67e367441",
+  "capture_sha256": "2d9383bc81fdd1615ea119e669951d5bd8615b67d2ee7543b5040951237b229b",
+  "native_source_sha256": {
+    "run_step.py": "ec3d6c814051f98eae66e90b0c6d7a1310544b9952957a674c6d84f91326fbe4",
+    "build_mock.py": "d5e2787a9c6bce2d797c5a5bca3540a0a725a8dbc2fd07b47ee215f2bfc9166b"
+  },
+  "scenario_count": 10,
+  "own_count": 3,
+  "daily": 4,
+  "release": 6,
+  "full_live_steps": 52,
+  "pilot_live_steps": 6,
+  "forecast_commit_status": "pending_explicit_authorization",
+  "paid_calls": 0
+}

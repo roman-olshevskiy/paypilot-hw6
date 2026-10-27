@@ -1,0 +1,43 @@
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== fixture · offline
+fixture baseline run 1 PASS  step 2: 0 model call(s), tools [], cache_read [], cost $0.001; mock answered 1 of 0 model requests
+    ok  state_row: rows [{'transaction_id': 'TX-1', 'account_id': None, 'amount': None, 'currency': 'USD'}]
+   baseline: 1/1 passed
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== fixture · offline
+fixture baseline run 1 PASS  step 2: 0 model call(s), tools [], cache_read [], cost $0.001; mock answered 1 of 0 model requests
+    ok  state_row: rows [{'transaction_id': 'TX-1', 'account_id': None, 'amount': None, 'currency': 'USD'}]
+   baseline: 1/1 passed
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== fixture · offline
+fixture baseline run 1 FAIL  step 2: 0 model call(s), tools [], cache_read [], cost $0.001; mock answered 1 of 0 model requests
+    BAD state_row: currency='EUR', expected 'USD'
+   baseline: 0/1 passed
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== fixture · offline
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== fixture · offline
+test_file_lock_retries_only_io (test_preparation.Harness.test_file_lock_retries_only_io) ... ok
+test_native_success_and_each_turn_captured (test_preparation.Harness.test_native_success_and_each_turn_captured) ... ok
+test_paid_guard_before_http (test_preparation.Harness.test_paid_guard_before_http) ... ok
+test_quality_fail_is_not_transport_error (test_preparation.Harness.test_quality_fail_is_not_transport_error) ... ok
+test_response_survives_trace_failure_no_retry (test_preparation.Harness.test_response_survives_trace_failure_no_retry) ... ok
+test_restore_failure_does_not_skip_other_settings (test_preparation.Harness.test_restore_failure_does_not_skip_other_settings) ... ok
+test_unknown_response_stops_without_retry (test_preparation.Harness.test_unknown_response_stops_without_retry) ... ok
+test_cache_second_call_and_no_missing_as_success (test_preparation.Suite.test_cache_second_call_and_no_missing_as_success) ... ok
+test_empty_state_and_wrong_currency_fail (test_preparation.Suite.test_empty_state_and_wrong_currency_fail) ... ok
+test_expectations_are_reproducible_and_do_not_match_live_turns (test_preparation.Suite.test_expectations_are_reproducible_and_do_not_match_live_turns) ... ok
+test_metadata_and_cost (test_preparation.Suite.test_metadata_and_cost) ... ok
+test_schema_missing_result_and_opaque_result (test_preparation.Suite.test_schema_missing_result_and_opaque_result) ... ok
+test_source_oracle_and_expired_window (test_preparation.Suite.test_source_oracle_and_expired_window) ... ok
+test_wrong_parameters_and_order (test_preparation.Suite.test_wrong_parameters_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.111s
+
+OK

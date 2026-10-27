@@ -1,0 +1,49 @@
+{
+  "customer_id": "CUS-0010",
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "defect": {
+      "profile": "clean",
+      "defects": "D13",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "Can I transfer 4,500 EUR today under my current remaining transfer limits? Check the current allowance.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "tool_sequence",
+      "must_include": [
+        "check_limits"
+      ],
+      "must_exclude": [
+        "get_transactions"
+      ],
+      "level": [
+        3,
+        4
+      ]
+    }
+  ],
+  "id": "HW6-07",
+  "title": "D13: use limits, not transaction history",
+  "dimension": "tool",
+  "gate": "release",
+  "runs": 5,
+  "origin": "own",
+  "design_note": "Oracle is description contract plus customer request",
+  "level": [
+    3,
+    4
+  ]
+}

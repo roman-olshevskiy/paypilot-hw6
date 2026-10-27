@@ -1,0 +1,65 @@
+{
+  "id": "HW6-02",
+  "title": "D29: eligibility result obeys its field/type contract",
+  "customer_id": "CUS-0004",
+  "gate": "daily",
+  "runs": 1,
+  "conditions": {
+    "baseline": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "defect": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    }
+  },
+  "turns": [
+    {
+      "user": "Show both TechMart Online charges recorded on ACC-1005.",
+      "model": [
+        {
+          "tool_calls": [
+            {
+              "id": "call_hw6_02_1",
+              "name": "get_transactions",
+              "arguments": {
+                "account_id": "ACC-1005"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Yes, on ACC-1005 there are two TechMart Online payments of 240.00 EUR: TX-0401 on 20 July 2026 and TX-0402 on 14 July 2026."
+        }
+      ]
+    },
+    {
+      "user": "Check TX-0402 and open a duplicate-charge dispute only if it is eligible.",
+      "live": true
+    }
+  ],
+  "assertions": [
+    {
+      "kind": "tool_result_schema",
+      "tool": "check_dispute_eligibility",
+      "required": {
+        "eligible": "boolean",
+        "checks": "object"
+      },
+      "level": [
+        1
+      ]
+    }
+  ],
+  "dimension": "contract",
+  "origin": "split S3",
+  "design_note": "Schema verdict is independent of the agent reaction",
+  "level": [
+    1
+  ]
+}
