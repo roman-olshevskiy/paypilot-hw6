@@ -1,0 +1,10 @@
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== HW6-10 · D28: cache reuse from the second live-step model call
+HW6-10 baseline run 1 PASS  step 4: 2 model call(s), tools ['check_limits'], cache_read [2514, 2514], cost $0.000318; mock answered 5 of 7 model requests
+    ok  cache_read_min: cache_read per call from #2: [2514]
+   baseline: 1/1 passed
+HW6-10 defect   run 1 FAIL  step 4: 2 model call(s), tools ['check_limits'], cache_read [0, 0], cost $0.000886; mock answered 5 of 7 model requests
+    BAD cache_read_min: cache_read per call from #2: [0]
+   defect: 0/1 passed
+Capture: D:\neoversity\paypilot-hw6\evidence\runs\20261027T162419547235Z-f80b149b

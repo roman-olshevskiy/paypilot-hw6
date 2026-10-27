@@ -1,0 +1,86 @@
+[
+  {
+    "scenario": "HW6-01",
+    "folder": "evidence/runs/20261027T162346631272Z-56edc57d",
+    "exit_code": 0,
+    "manifest": {
+      "args": [
+        "--scenario",
+        "HW6-01",
+        "--runs",
+        "1"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "restore_errors": [],
+      "restore_status": "passed",
+      "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+      "chat_attempts": 6,
+      "responses": 6,
+      "complete": 6,
+      "report_sha256": {
+        "raw-results.json": "34a13c85a5c770adddf7e4ff71efc5594685fe1c1a488c8e7121c6c3989dac9d"
+      },
+      "quality_passed": false,
+      "global_settings_scope": "Compared and restored if changed; per-request settings do not change server config",
+      "database_scope": "Seed reset is real; arbitrary pre-run DB/session state is not restored",
+      "proxy_scope": "Logs cleared by native runner, active expectations not changed by adapter"
+    }
+  },
+  {
+    "scenario": "HW6-09",
+    "folder": "evidence/runs/20261027T162403350245Z-b290419c",
+    "exit_code": 0,
+    "manifest": {
+      "args": [
+        "--scenario",
+        "HW6-09",
+        "--runs",
+        "1"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "restore_errors": [],
+      "restore_status": "passed",
+      "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+      "chat_attempts": 4,
+      "responses": 4,
+      "complete": 4,
+      "report_sha256": {
+        "raw-results.json": "86c79eef9d702b38fa96fde04f376ecf9c45251cf27fc89b64b931889258419f"
+      },
+      "quality_passed": true,
+      "global_settings_scope": "Compared and restored if changed; per-request settings do not change server config",
+      "database_scope": "Seed reset is real; arbitrary pre-run DB/session state is not restored",
+      "proxy_scope": "Logs cleared by native runner, active expectations not changed by adapter"
+    }
+  },
+  {
+    "scenario": "HW6-10",
+    "folder": "evidence/runs/20261027T162419547235Z-f80b149b",
+    "exit_code": 0,
+    "manifest": {
+      "args": [
+        "--scenario",
+        "HW6-10",
+        "--runs",
+        "1"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "restore_errors": [],
+      "restore_status": "passed",
+      "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+      "chat_attempts": 8,
+      "responses": 8,
+      "complete": 8,
+      "report_sha256": {
+        "raw-results.json": "576bdc7a86ef2f3615a29ffc9123f89a3a33f2c3ce8c6dc91c8ef39e63d6d4a7"
+      },
+      "quality_passed": false,
+      "global_settings_scope": "Compared and restored if changed; per-request settings do not change server config",
+      "database_scope": "Seed reset is real; arbitrary pre-run DB/session state is not restored",
+      "proxy_scope": "Logs cleared by native runner, active expectations not changed by adapter"
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "74af00b38dcb4289"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "4fd1ab99d750",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "6aed684798254089"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Find the pair of TechMart Online charges on my EUR account ACC-1005.",
+      "session_id": null,
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "2b6b894fe044450d"
+  },
+  {
+    "scenario": "HW6-09",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D29",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "Submit a duplicate-charge dispute for the older charge TX-0402 if permitted.",
+      "session_id": "e81bc23898e2",
+      "customer_id": "CUS-0004"
+    },
+    "status": "response_received",
+    "request_id": "1f31bbb065964f7a"
+  }
+]

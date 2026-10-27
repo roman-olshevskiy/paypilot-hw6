@@ -1,0 +1,23 @@
+{
+  "args": [
+    "--scenario",
+    "HW6-09",
+    "--runs",
+    "1"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "restore_errors": [],
+  "restore_status": "passed",
+  "suite_sha256": "743b4ad2ce80f37d7f5d92d03be0f1c84910499f2c338c394244fab5f2eb2d3d",
+  "chat_attempts": 4,
+  "responses": 4,
+  "complete": 4,
+  "report_sha256": {
+    "raw-results.json": "86c79eef9d702b38fa96fde04f376ecf9c45251cf27fc89b64b931889258419f"
+  },
+  "quality_passed": true,
+  "global_settings_scope": "Compared and restored if changed; per-request settings do not change server config",
+  "database_scope": "Seed reset is real; arbitrary pre-run DB/session state is not restored",
+  "proxy_scope": "Logs cleared by native runner, active expectations not changed by adapter"
+}

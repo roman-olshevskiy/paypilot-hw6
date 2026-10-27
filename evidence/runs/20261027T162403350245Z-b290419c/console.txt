@@ -1,0 +1,10 @@
+stand http://localhost:8000: provider openrouter, mock http://localhost:1080
+
+== HW6-09 · D29: reject an expired dispute despite an opaque result
+HW6-09 baseline run 1 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000377; mock answered 2 of 4 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+   baseline: 1/1 passed
+HW6-09 defect   run 1 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.000918; mock answered 2 of 5 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+   defect: 1/1 passed
+Capture: D:\neoversity\paypilot-hw6\evidence\runs\20261027T162403350245Z-b290419c

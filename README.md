@@ -1,7 +1,7 @@
 # ДЗ №6 — Tool Call Assertion Suite
 
-**Підготовлено до пілота; платних прогонів ще немає.**
-Власна копія L07 ce025e3; shared74f1995. Гілка codex/hw6-tool-call-suite, без комітів/push.
+**Пілот завершено; повна серія ще не запускалася.**
+Власна копія L07 ce025e3; shared74f1995. Гілка codex/hw6-tool-call-suite, локальний forecast commit89ac39e, без push. Результати пілота незакомічені.
 [Локальне середовище](SETUP.md) · [Оракули й ризик9 інструментів](docs/oracles-and-risk.md) ·
 [Прогноз до запусків](docs/forecast-before-runs.md) · [Freeze](evidence/dataset-freeze.json).
 
@@ -46,8 +46,8 @@ Remove-Item Env:HW6_RUN_ENVIRONMENT
 Всі неперехоплені запити під час проби заблоковані503, upstream delta0.
 Це не перевірка live-маршруту OpenRouter; платного completion немає.
 
-## Пілот — НЕ виконано
-Перед запуском потрібні локальний review й окремий forecast commit із реальним SHA у evidence/forecast-commit.json.
+## Пілот — завершено
+Перед пілотом створено дозволений локальний forecast commit89ac39e; SHA підтверджено в evidence/forecast-commit.json.
 Не встановлювати цей файл вигаданим значенням. Guard перевіряє commit/content до будь-якого HTTP/reset.
 
 Майбутній приклад одного пілотного сценарію (дві умови, два live-кроки, оплата):
@@ -57,7 +57,8 @@ python scripts/hw6_capture.py --scenario HW6-01 --runs 1
 Remove-Item Env:HW6_ENABLE_PAID_RUNS
 ~~~
 Пілот складається з HW6-01,HW6-09,HW6-10 по1 repeat baseline+defect.
-На поточному етапі запуск навмисно заблоковано. Крок9 не виконувався.
+Крок9 завершено:6 live/12 mock, root USD0.004111, API usage USD0.00411112.
+[Пілот і бюджет](docs/pilot-review.md). Наступний повний прогін ще не дозволено.
 
 ## Capture і майбутній CI
 Кожен виклик adapter створює evidence/runs/<UTC-ID>, ніколи не перезаписує інший запуск.
@@ -73,4 +74,4 @@ Native CLI exit0 може містити quality FAIL — CI має читати
 Chain-ready baseline/gate докази ще не зібрано: вони потребують живої моделі після пілота.
 Policy у двох формах — кроки11–12 плану, не заявляється завершеною зараз.
 
-[Підсумок підготовки до пілота](evidence/preparation-summary.json):16 offline +9 environment checks passed. Крок9 не починався.
+[Підсумок підготовки до пілота](evidence/preparation-summary.json):16 offline +9 environment checks passed. Підготовка завершена, пілот описано вище.

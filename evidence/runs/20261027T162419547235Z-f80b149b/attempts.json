@@ -1,0 +1,154 @@
+[
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "ac576f35eab84587"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "0535440a69f1",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "6a958dc23af342e1"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "0535440a69f1",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "b7ac5df5d61d4ad6"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "baseline",
+    "settings": {
+      "profile": "clean",
+      "defects": "",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "0535440a69f1",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "f92df7b512f14c8f"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 1,
+    "request": {
+      "message": "Identify the accounts linked to my signed-in customer.",
+      "session_id": null,
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "55773816de7e426b"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 2,
+    "request": {
+      "message": "List the last two outgoing payments on the GBP account.",
+      "session_id": "243bfc9b69ce",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "4f8100decf8847b0"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 3,
+    "request": {
+      "message": "Those outgoing payments match my records.",
+      "session_id": "243bfc9b69ce",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "e8e2e9dcdd174575"
+  },
+  {
+    "scenario": "HW6-10",
+    "condition": "defect",
+    "settings": {
+      "profile": "clean",
+      "defects": "D28",
+      "clock": "2026-09-15T10:00:00Z",
+      "summarize_after": 8
+    },
+    "repeat": 1,
+    "step": 4,
+    "request": {
+      "message": "Check my current daily and monthly transfer limits and remaining allowances.",
+      "session_id": "243bfc9b69ce",
+      "customer_id": "CUS-0010"
+    },
+    "status": "response_received",
+    "request_id": "06fafc5aeac5450b"
+  }
+]
