@@ -37,5 +37,7 @@ def main():
       "Root cost — оцінка. API usage ключа й баланс рахунку — різні величини, див. окрему звірку.",
       "","[Машинний аналіз](../evidence/full-run-analysis.json) · [пілот](pilot-review.md) · [прогноз](forecast-before-runs.md).",
       "Policy і фінальний аналіз ризиків — наступний крок11."]
+    if (ROOT/"evidence/final-billing-reconciliation.json").exists():
+        raise SystemExit("Final reviewed summary exists; use a new report path instead of overwriting it")
     (ROOT/"docs/full-run-summary.md").write_bytes(("\n".join(lines)+"\n").encode())
 if __name__=="__main__":main()

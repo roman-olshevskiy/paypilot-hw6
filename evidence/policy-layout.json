@@ -1,0 +1,22 @@
+{
+  "format": "A4",
+  "body_font": "Arial9.5pt, leading12",
+  "table_font": "Arial8.6pt",
+  "page_split": "before section7",
+  "documents": [
+    {
+      "file": "tool-call-testing-policy.md",
+      "pages": 2,
+      "words": 738,
+      "sha256": "8aee9ad1d5ba46ac81717029c0a4d843e8ebfe390da286ac8c6f5c47dd4323d3"
+    },
+    {
+      "file": "tool-call-testing-policy-template.md",
+      "pages": 2,
+      "words": 556,
+      "sha256": "bf673f76833a5e10b8fe5d1a1abc64713228d5179c0114cffcb89a209f5cf005"
+    }
+  ],
+  "visual_review": "passed: all four pages inspected, no clipping or overlap",
+  "scope": "Print layout only; Markdown viewers may paginate differently"
+}

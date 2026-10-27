@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-27",
+  "cloned_commit": "bbdd5089edd091df782434848e12adfd34cc039a",
+  "native_clone_clean_before_and_after": true,
+  "native_code_and_scenarios_identical": true,
+  "commands": [
+    {
+      "scope": "Native CLI recorded replay, not new live calls",
+      "repeats": 7,
+      "passed": 5,
+      "report": "daily-replay.json",
+      "canonical_equivalent": "docker compose run --rm eval --gate daily",
+      "execution": "Python native.main() from clean clone with recorded fixtures; Docker command not executed"
+    },
+    {
+      "scope": "Native CLI recorded replay, not new live calls",
+      "repeats": 10,
+      "passed": 10,
+      "report": "baseline-replay.json",
+      "canonical_equivalent": "docker compose run --rm eval --condition baseline",
+      "execution": "Python native.main() from clean clone with recorded fixtures; Docker command not executed"
+    },
+    {
+      "scope": "Native CLI recorded replay, not new live calls",
+      "repeats": 45,
+      "passed": 35,
+      "report": "release-replay.json",
+      "canonical_equivalent": "docker compose run --rm eval --gate release",
+      "execution": "Python native.main() from clean clone with recorded fixtures; Docker command not executed"
+    }
+  ],
+  "all_original_full_native_verdicts_reproduced": true,
+  "real_stand_requests": 0,
+  "real_model_calls": 0,
+  "fresh_live_clean_clone_run": false,
+  "live_basis": "Existing full daily/release captures, baseline34/34; pilot excluded from frequency"
+}

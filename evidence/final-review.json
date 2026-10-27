@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-27",
+  "offline_passed": 19,
+  "explicit_runtime_cleanup_test_passed": 1,
+  "read_only_billing_refresh_passed": 1,
+  "clean_clone_replay_verdicts": 52,
+  "policy_pages_each": 2,
+  "new_paid_calls": 0,
+  "authored_documents_third_person_scan": "passed",
+  "raw_json_parse": "passed",
+  "policy_hashes": "passed",
+  "pending": [
+    "local review",
+    "explicitly authorized commit/push/PR",
+    "merge",
+    "LMS"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "pilot_provider_cost_usd": 0.00411112,
+  "full_provider_cost_usd": 0.03343497,
+  "total_provider_cost_usd": 0.03754609,
+  "final_key_usage_usd": 0.03754609,
+  "difference_usd": 0,
+  "root_total_estimate_usd": 0.037552,
+  "root_rounding_difference_usd": 5.91e-06,
+  "user_confirmed_available_usd": 9.96,
+  "user_display_key_usage_usd": 0.0375,
+  "anthropic_confirmed_available_usd": 17.05,
+  "byok_usage_usd": 0,
+  "status": "Earlier delayed counter discrepancy resolved by final read-only snapshot; provider spans match key usage exactly",
+  "scope": "Key usage and user-confirmed display, not an itemized invoice; historical snapshots preserved"
+}
