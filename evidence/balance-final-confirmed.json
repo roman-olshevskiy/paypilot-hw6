@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-27",
+  "source": "Explicit chat confirmation after full series",
+  "openrouter_available_usd": 9.96,
+  "openrouter_key_usage_display_usd": 0.0375,
+  "available_display_decimals": 2,
+  "key_usage_display_decimals": 4,
+  "anthropic_available_usd": 17.05,
+  "scope": "Displayed values; not exact API counter or invoice"
+}

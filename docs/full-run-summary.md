@@ -43,19 +43,16 @@ Reset перед кожним повтором реальний; довільн�
 Root cost — оцінка. API usage ключа й баланс рахунку — різні величини, див. окрему звірку.
 
 [Машинний аналіз](../evidence/full-run-analysis.json) · [пілот](pilot-review.md) · [прогноз](forecast-before-runs.md).
-Policy і фінальний аналіз ризиків — наступний крок11.
+Фінальний аналіз і Policy наведено нижче.
 
 
-## Звірка OpenRouter
+## Фінальна звірка й відтворюваність
 
-До full usage0.00411112 USD; останній usage0.03691475 USD; приріст за цей інтервал **USD0.03280363**.
-Перший after snapshot0.02943637 оновився до0.03691475 без наших нових генерацій; це спостережуване відкладене оновлення.
-Root estimate full0.033441; сума provider.cost_usd із141 llm.call0.03343497.
-Різниця provider-span sum проти usage delta — **USD0.00063134**; причина не встановлена, лише округлення її не пояснює.
-Не заявляємо повної звірки рахунку й не редагуємо жоден snapshot.
-Загалом pilot+full: root0.037552, key usage0.03691475; byok_usage0, прямий баланс Anthropic не використовувався.
-[Усі значення й межі звірки](../evidence/full-billing-reconciliation.json).
+Provider cost пілота й full **USD0.03754609** точно збігається з фінальним usage ключа. Root estimate USD0.037552 відрізняється на USD0.00000591 через округлення. Попередній лічильник відставав; фінальний snapshot усунув залишок без нових генерацій. Історичні snapshots збережено.
+Підтверджені показники кабінету: available USD9.96, usage USD0.0375 (точність дисплея), Anthropic USD17.05; byok_usage0.
+[Фінальна звірка](../evidence/final-billing-reconciliation.json) · [snapshot](../evidence/final-key-usage.json).
 
-D11 defect PASS конкретно містить currency:USD у payload — дефект вибору default currency не був виконаний.
-D29 forecast2/5 не справдився: записів0/5; D13 частота FAIL5/5 перевищила прогноз3/5.
-Поточні тести й прогноз збережено; додаткових прогонів для отримання іншого результату немає.
+Чистий clone committed main відтворив усі52 native verdicts з captures; baseline-only10/10. Це offline Python CLI replay, не новий Docker/live запуск; HTTP/model calls0.
+[Доказ replay](../evidence/chain-ready/20261027T171853781261Z-b7485f18/verification.json).
+[Policy](../tool-call-testing-policy.md) · [порожня форма](../tool-call-testing-policy-template.md) · [докази дій і кешу](tool-evidence.md).
+D11 masked і D29 forbidden writes0/5 лишаються явними межами результату.

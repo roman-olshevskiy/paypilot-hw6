@@ -1,0 +1,34 @@
+stand http://localhost:8000: provider recorded-offline-replay, mock http://localhost:1080
+
+== HW6-01 · D12: correct call must persist the transaction account and currency
+HW6-01 baseline run 1 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [0, 2514, 2514], cost $0.000808; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+   baseline: 1/1 passed
+HW6-01 defect   run 1 FAIL  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [0, 2638, 2638], cost $0.000813; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    BAD state_row: account_id='ACC-1002', expected 'ACC-1003'; currency='EUR', expected 'USD'
+   defect: 0/1 passed
+
+== HW6-02 · D29: eligibility result obeys its field/type contract
+HW6-02 baseline run 1 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000365; mock answered 2 of 4 model requests
+    ok  tool_result_schema: result matches the contract
+   baseline: 1/1 passed
+HW6-02 defect   run 1 FAIL  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.001074; mock answered 2 of 5 model requests
+    BAD tool_result_schema: eligible: expected boolean, got {"ok": true, "r": "N", "c": [3], "w": 60}; checks: expected object, got {"ok": true, "r": "N", "c": [3], "w": 60}
+   defect: 0/1 passed
+
+== HW6-03 · Repeat request leaves exactly one dispute
+HW6-03 baseline run 1 PASS  step 2: 1 model call(s), tools [], cache_read [2514], cost $0.000203; mock answered 3 of 4 model requests
+    ok  state_row: rows [{'transaction_id': 'TX-0401', 'account_id': 'ACC-1005', 'amount': 240.0, 'currency': 'EUR'}]
+   baseline: 1/1 passed
+
+== HW6-04 · D11: USD transaction on EUR account remains USD in disputes
+HW6-04 baseline run 1 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000544; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0801', 'reason_code': 'unauthorized_debit', 'amount': 120.0, 'currency': 'USD'}]
+    ok  state_row: rows [{'transaction_id': 'TX-0801', 'account_id': 'ACC-1009', 'amount': 120.0, 'currency': 'USD'}]
+   baseline: 1/1 passed
+HW6-04 defect   run 1 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000554; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0801', 'reason_code': 'unauthorized_debit', 'amount': 120, 'currency': 'USD'}]
+    ok  state_row: rows [{'transaction_id': 'TX-0801', 'account_id': 'ACC-1009', 'amount': 120.0, 'currency': 'USD'}]
+   defect: 1/1 passed

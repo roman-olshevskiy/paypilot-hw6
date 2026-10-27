@@ -31,19 +31,7 @@ Remove-Item Env:L07_DIR,Env:L07_PROVIDER,Env:PROFILE,Env:DEFECTS,Env:LLM_MODEL
 Це відтворює provider/model з .env стенду, без proxy override; дані volumes не видаляються.
 
 
-## Поточний результат
-2026-10-27:6/6 реальних environment-тестів passed.
-[Конфігурація без ключів](evidence/environment-runtime.json),
-[мок-маршрут із trace](evidence/environment-mock-route.json),
-[підсумок](evidence/environment-ready.json).
-Платних model calls0; один mock chat виконав лише get_account, таблиці дій не змінені.
-Live-маршрут до OpenRouter ще не тестувався; підготовка suite/forecast попереду.
+## Поточний стан після завершення
 
-Повторення перевірки:
-~~~powershell
-$env:HW6_RUN_ENVIRONMENT='1'
-python -m unittest discover -s tests -p test_environment.py -v
-Remove-Item Env:HW6_RUN_ENVIRONMENT
-~~~
-Мок-проба тимчасово блокує всі неперехоплені запити503 і прибирає guard у finally.
-Звичайне unittest discovery пропускає environment-тести.
+2026-10-27: пілот і повні серії завершено. Стенд повернуто до anthropic із базового .env; HTTPS_PROXY/SSL_CERT_FILE порожні, HW6 MockServer зупинено, volumes збережено. Реальний health/runtime тест пройшов без генерацій: [доказ](evidence/runtime-restored.json).
+Для нового запуску спершу повторити налаштування вище. Environment-тести розраховані на активний OpenRouter/MockServer; у звичайному discovery вони пропускаються. Платні виклики потребують окремого явного запуску.

@@ -1,0 +1,132 @@
+stand http://localhost:8000: provider recorded-offline-replay, mock http://localhost:1080
+
+== HW6-05 · Eligibility is checked before the dispute is written
+HW6-05 baseline run 1 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000502; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_order: check_dispute_eligibility before create_dispute: ['check_dispute_eligibility', 'create_dispute']
+HW6-05 baseline run 2 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.00051; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_order: check_dispute_eligibility before create_dispute: ['check_dispute_eligibility', 'create_dispute']
+HW6-05 baseline run 3 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000506; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_order: check_dispute_eligibility before create_dispute: ['check_dispute_eligibility', 'create_dispute']
+HW6-05 baseline run 4 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000505; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_order: check_dispute_eligibility before create_dispute: ['check_dispute_eligibility', 'create_dispute']
+HW6-05 baseline run 5 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000514; mock answered 4 of 7 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_order: check_dispute_eligibility before create_dispute: ['check_dispute_eligibility', 'create_dispute']
+   baseline: 5/5 passed
+
+== HW6-06 · Resolve the other payment from the prepared history
+HW6-06 baseline run 1 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000466; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_not_called: create_dispute{'transaction_id': 'TX-0204'} called 0x
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+HW6-06 baseline run 2 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.00046; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_not_called: create_dispute{'transaction_id': 'TX-0204'} called 0x
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+HW6-06 baseline run 3 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000455; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_not_called: create_dispute{'transaction_id': 'TX-0204'} called 0x
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+HW6-06 baseline run 4 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000449; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_not_called: create_dispute{'transaction_id': 'TX-0204'} called 0x
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+HW6-06 baseline run 5 PASS  step 3: 3 model call(s), tools ['check_dispute_eligibility', 'create_dispute'], cache_read [2514, 2514, 2514], cost $0.000458; mock answered 3 of 6 model requests
+    ok  tool_called: create_dispute calls: [{'transaction_id': 'TX-0202', 'reason_code': 'unauthorized_debit'}]
+    ok  tool_not_called: create_dispute{'transaction_id': 'TX-0204'} called 0x
+    ok  state_row: rows [{'transaction_id': 'TX-0202', 'account_id': 'ACC-1003', 'amount': 89.99, 'currency': 'USD'}]
+   baseline: 5/5 passed
+
+== HW6-07 · D13: use limits, not transaction history
+HW6-07 baseline run 1 PASS  step 1: 3 model call(s), tools ['get_account', 'check_limits'], cache_read [2514, 2514, 2514], cost $0.000378; mock answered 0 of 3 model requests
+    ok  tool_sequence: tools ['get_account', 'check_limits']
+HW6-07 baseline run 2 PASS  step 1: 3 model call(s), tools ['get_account', 'check_limits'], cache_read [2514, 2514, 2514], cost $0.000377; mock answered 0 of 3 model requests
+    ok  tool_sequence: tools ['get_account', 'check_limits']
+HW6-07 baseline run 3 PASS  step 1: 3 model call(s), tools ['get_account', 'check_limits'], cache_read [2514, 2514, 2514], cost $0.000403; mock answered 0 of 3 model requests
+    ok  tool_sequence: tools ['get_account', 'check_limits']
+HW6-07 baseline run 4 PASS  step 1: 3 model call(s), tools ['get_account', 'check_limits'], cache_read [2514, 2514, 2514], cost $0.000366; mock answered 0 of 3 model requests
+    ok  tool_sequence: tools ['get_account', 'check_limits']
+HW6-07 baseline run 5 PASS  step 1: 3 model call(s), tools ['get_account', 'check_limits'], cache_read [2514, 2514, 2514], cost $0.000407; mock answered 0 of 3 model requests
+    ok  tool_sequence: tools ['get_account', 'check_limits']
+   baseline: 5/5 passed
+HW6-07 defect   run 1 FAIL  step 1: 5 model call(s), tools ['get_account', 'get_transactions', 'search_knowledge_base', 'quote_fx'], cache_read [0, 2510, 2510, 2510, 2510], cost $0.002291; mock answered 0 of 5 model requests
+    BAD tool_sequence: check_limits not called; get_transactions should not be called
+HW6-07 defect   run 2 FAIL  step 1: 5 model call(s), tools ['get_account', 'get_transactions', 'search_knowledge_base', 'quote_fx', 'quote_fx'], cache_read [2510, 2510, 2510, 2510, 2510], cost $0.001744; mock answered 0 of 5 model requests
+    BAD tool_sequence: check_limits not called; get_transactions should not be called
+HW6-07 defect   run 3 FAIL  step 1: 4 model call(s), tools ['get_account', 'get_transactions', 'search_knowledge_base'], cache_read [2510, 2510, 2510, 2510], cost $0.001027; mock answered 0 of 4 model requests
+    BAD tool_sequence: check_limits not called; get_transactions should not be called
+HW6-07 defect   run 4 FAIL  step 1: 4 model call(s), tools ['get_account', 'get_transactions', 'search_knowledge_base'], cache_read [2510, 2510, 2510, 2510], cost $0.00115; mock answered 0 of 4 model requests
+    BAD tool_sequence: check_limits not called; get_transactions should not be called
+HW6-07 defect   run 5 FAIL  step 1: 5 model call(s), tools ['get_account', 'get_transactions', 'quote_fx', 'search_knowledge_base'], cache_read [2510, 2510, 2510, 2510, 2510], cost $0.001592; mock answered 0 of 5 model requests
+    BAD tool_sequence: check_limits not called; get_transactions should not be called
+   defect: 0/5 passed
+
+== HW6-08 · No write for the expired duplicate-charge request
+HW6-08 baseline run 1 PASS  step 1: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000364; mock answered 0 of 2 model requests
+    ok  tool_not_called: create_dispute{} called 0x
+    ok  state_row: rows []
+HW6-08 baseline run 2 PASS  step 1: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000338; mock answered 0 of 2 model requests
+    ok  tool_not_called: create_dispute{} called 0x
+    ok  state_row: rows []
+HW6-08 baseline run 3 PASS  step 1: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000324; mock answered 0 of 2 model requests
+    ok  tool_not_called: create_dispute{} called 0x
+    ok  state_row: rows []
+HW6-08 baseline run 4 PASS  step 1: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000357; mock answered 0 of 2 model requests
+    ok  tool_not_called: create_dispute{} called 0x
+    ok  state_row: rows []
+HW6-08 baseline run 5 PASS  step 1: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000334; mock answered 0 of 2 model requests
+    ok  tool_not_called: create_dispute{} called 0x
+    ok  state_row: rows []
+   baseline: 5/5 passed
+
+== HW6-09 · D29: reject an expired dispute despite an opaque result
+HW6-09 baseline run 1 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.00038; mock answered 2 of 4 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 baseline run 2 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000369; mock answered 2 of 4 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 baseline run 3 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000345; mock answered 2 of 4 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 baseline run 4 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000373; mock answered 2 of 4 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 baseline run 5 PASS  step 2: 2 model call(s), tools ['check_dispute_eligibility'], cache_read [2514, 2514], cost $0.000374; mock answered 2 of 4 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+   baseline: 5/5 passed
+HW6-09 defect   run 1 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.001007; mock answered 2 of 5 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 defect   run 2 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.000963; mock answered 2 of 5 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 defect   run 3 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.000997; mock answered 2 of 5 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 defect   run 4 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.001057; mock answered 2 of 5 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+HW6-09 defect   run 5 PASS  step 2: 3 model call(s), tools ['check_dispute_eligibility', 'search_knowledge_base'], cache_read [2514, 2514, 2514], cost $0.000989; mock answered 2 of 5 model requests
+    ok  tool_call_count: create_dispute called 0x, expected 0
+   defect: 5/5 passed
+
+== HW6-10 · D28: cache reuse from the second live-step model call
+HW6-10 baseline run 1 PASS  step 4: 2 model call(s), tools ['check_limits'], cache_read [2514, 2514], cost $0.000304; mock answered 5 of 7 model requests
+    ok  cache_read_min: cache_read per call from #2: [2514]
+HW6-10 baseline run 2 PASS  step 4: 2 model call(s), tools ['check_limits'], cache_read [2514, 2514], cost $0.000304; mock answered 5 of 7 model requests
+    ok  cache_read_min: cache_read per call from #2: [2514]
+HW6-10 baseline run 3 PASS  step 4: 2 model call(s), tools ['check_limits'], cache_read [2514, 2514], cost $0.000301; mock answered 5 of 7 model requests
+    ok  cache_read_min: cache_read per call from #2: [2514]
+HW6-10 baseline run 4 PASS  step 4: 2 model call(s), tools ['check_limits'], cache_read [2514, 2514], cost $0.000292; mock answered 5 of 7 model requests
+    ok  cache_read_min: cache_read per call from #2: [2514]
+HW6-10 baseline run 5 PASS  step 4: 2 model call(s), tools ['check_limits'], cache_read [2514, 2514], cost $0.000303; mock answered 5 of 7 model requests
+    ok  cache_read_min: cache_read per call from #2: [2514]
+   baseline: 5/5 passed
+HW6-10 defect   run 1 FAIL  step 4: 2 model call(s), tools ['check_limits'], cache_read [0, 0], cost $0.000894; mock answered 5 of 7 model requests
+    BAD cache_read_min: cache_read per call from #2: [0]
+HW6-10 defect   run 2 FAIL  step 4: 2 model call(s), tools ['check_limits'], cache_read [0, 0], cost $0.000886; mock answered 5 of 7 model requests
+    BAD cache_read_min: cache_read per call from #2: [0]
+HW6-10 defect   run 3 FAIL  step 4: 2 model call(s), tools ['check_limits'], cache_read [0, 0], cost $0.000884; mock answered 5 of 7 model requests
+    BAD cache_read_min: cache_read per call from #2: [0]
+HW6-10 defect   run 4 FAIL  step 4: 2 model call(s), tools ['check_limits'], cache_read [0, 0], cost $0.000885; mock answered 5 of 7 model requests
+    BAD cache_read_min: cache_read per call from #2: [0]
+HW6-10 defect   run 5 FAIL  step 4: 2 model call(s), tools ['check_limits'], cache_read [0, 0], cost $0.000896; mock answered 5 of 7 model requests
+    BAD cache_read_min: cache_read per call from #2: [0]
+   defect: 0/5 passed
