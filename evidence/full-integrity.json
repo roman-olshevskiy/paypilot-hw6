@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "full_request_ids": 121,
+  "full_sessions": 52,
+  "including_pilot_request_ids": 139,
+  "including_pilot_sessions": 58,
+  "raw_report_hashes": "passed",
+  "restore": "passed",
+  "baseline": "34/34",
+  "forecast_unchanged": true,
+  "suite_unchanged": true,
+  "extra_paid_retries": 0
+}

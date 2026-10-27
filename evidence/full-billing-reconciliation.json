@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-27",
+  "confirmed_start_available_balance_usd": 10.0,
+  "before_full_key_usage_usd": 0.00411112,
+  "initial_after_key_usage_usd": 0.02943637,
+  "refreshed_after_key_usage_usd": 0.03691475,
+  "latest_key_usage_usd": 0.03691475,
+  "full_key_usage_delta_usd": 0.03280363,
+  "full_root_estimate_usd": 0.033441,
+  "full_provider_span_sum_usd": 0.03343497,
+  "provider_vs_key_delta_unexplained_usd": 0.00063134,
+  "total_root_including_pilot_usd": 0.037552,
+  "total_root_vs_key_usage_difference_usd": 0.00063725,
+  "byok_usage_usd": 0,
+  "account_available_balance_after": "not independently read",
+  "reconciliation": "Initial counter lag observed; small residual difference remains unexplained. Not treated as rounding-only or fully reconciled.",
+  "scope": "Read-only key counters and captured costs; not an itemized invoice. Direct Anthropic key not used by these runs."
+}
